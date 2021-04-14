@@ -335,6 +335,8 @@ nav.menu ul {
 
 nav.menu ul li h2 {
   font-family: "Abril Fatface", cursive;
+  color: #f6f6f6;
+  margin: 0;
 }
 
 nav.menu ul li a {
@@ -365,4 +367,22 @@ p {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0px;
+}
+
+header {
+  background: #345231;
+}
+
+header nav.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0;
+}
+
+header nav.menu ul li {
+  padding: 0 20px;
 }
