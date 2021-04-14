@@ -308,6 +308,7 @@ h2,
 h3,
 h4 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -335,6 +336,7 @@ nav.menu ul {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 2.9rem;
+  text-transform: uppercase;
 }
 
 nav.menu ul li h2 {

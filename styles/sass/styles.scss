@@ -4,9 +4,8 @@
 @import "partials/mixins";
 @import "partials/typography";
 
-// ** HEADER **
+//General styles for all pages
 
-// nav for all pages
 header {
   background: $pine;
   nav.menu ul {
@@ -18,6 +17,8 @@ header {
     }
   }
 }
+
+// ** HEADER **
 
 .hero {
   display: flex;
