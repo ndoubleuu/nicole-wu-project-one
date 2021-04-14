@@ -315,6 +315,10 @@ h1 {
   color: #f6f6f6;
 }
 
+section.hero h1 {
+  font-size: 12.5rem;
+}
+
 h2 {
   font-size: 4.2rem;
 }
@@ -385,4 +389,42 @@ header nav.menu ul {
 
 header nav.menu ul li {
   padding: 0 20px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero div.titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-right: 70px;
+}
+
+.hero div.titleContainer img {
+  position: absolute;
+  left: -60px;
+  top: 60px;
+}
+
+.hero div.imageContainer {
+  background-color: #f6f6f6;
+  position: relative;
+  top: 70px;
+}
+
+.hero div.imageContainer img {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
 }

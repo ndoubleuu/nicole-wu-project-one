@@ -4,7 +4,9 @@
 @import "partials/mixins";
 @import "partials/typography";
 
-// Header
+// ** HEADER **
+
+// nav for all pages
 header {
   background: $pine;
   nav.menu ul {
@@ -13,6 +15,32 @@ header {
     padding: 30px 0;
     li {
       padding: 0 20px;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div.titleContainer {
+    display: flex;
+    position: relative;
+    padding-right: 70px;
+    img {
+      position: absolute;
+      left: -60px;
+      top: 60px;
+    }
+  }
+  div.imageContainer {
+    background-color: $whiteShade;
+    position: relative;
+    top: 70px;
+    img {
+      position: relative;
+      bottom: 20px;
+      right: 20px;
     }
   }
 }
