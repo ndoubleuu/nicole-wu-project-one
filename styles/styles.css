@@ -272,6 +272,7 @@ html {
 .wrapper {
   margin: 0 auto;
   width: 1440px;
+  max-width: 80%;
 }
 
 img {
