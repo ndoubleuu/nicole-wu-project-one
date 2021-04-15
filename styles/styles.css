@@ -293,7 +293,7 @@ h1 {
   color: #f6f6f6;
 }
 
-section.hero h1 {
+.hero h1 {
   font-size: 12.5rem;
 }
 
@@ -307,31 +307,33 @@ h3 {
 
 h4 {
   font-size: 2.4rem;
+  margin: 0;
+  padding: 0 20px;
 }
 
-nav.menu ul {
+.menu ul {
   font-weight: 700;
   line-height: 2.9rem;
   text-transform: uppercase;
 }
 
-nav.menu ul li h2 {
+.menu ul li h2 {
   font-family: "Abril Fatface", cursive;
   color: #f6f6f6;
   margin: 0;
 }
 
-nav.menu ul li a {
+.menu ul li a {
   font-family: "Montserrat", sans-serif;
   color: #f6f6f6;
   text-decoration: none;
 }
 
-nav.menu ul li a.selected {
+.menu ul li a.selected {
   color: #e4a436;
 }
 
-a.button {
+.button {
   font-family: "Abril Fatface", cursive;
   text-decoration: none;
   color: #1f1f1f;
@@ -340,8 +342,8 @@ a.button {
   text-transform: uppercase;
 }
 
-a.button:hover {
-  color: #e4a436;
+.button:hover, .button:focus {
+  color: #1f1f1f;
 }
 
 p {
@@ -382,7 +384,7 @@ header {
   background: #345231;
 }
 
-header nav.menu ul {
+header .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,28 +394,27 @@ header nav.menu ul {
   padding: 30px 0;
 }
 
-header nav.menu ul li {
+header .menu ul li {
   padding: 0 20px;
 }
 
-nav.menu a {
+.menu a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-nav.menu a:hover {
+.menu a:hover {
   color: #e4a436;
 }
 
-a.button {
+.button {
   background: #e4a436;
   padding: 10px 20px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-a.button:hover, a.button:focus {
-  color: black;
+.button:hover, .button:focus {
   background: #fde4b8;
 }
 
@@ -443,41 +444,41 @@ p {
           align-items: center;
 }
 
-.hero div.titleContainer {
+.hero .titleContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-right: 70px;
+  padding-right: 50px;
 }
 
-.hero div.titleContainer img {
+.hero .titleContainer img {
   position: absolute;
   left: -60px;
   top: 60px;
 }
 
-.hero div.imageContainer {
+.hero .imageContainer {
   background-color: #fff;
-  min-width: 20%;
+  min-width: 30%;
   position: relative;
   top: 70px;
-  left: 20px;
+  left: 30px;
 }
 
-.hero div.imageContainer img {
+.hero .imageContainer img {
   position: relative;
   bottom: 20px;
   right: 20px;
 }
 
-section.whosWillow {
+.whosWillow {
   background: #f6f6f6;
   text-align: center;
   padding: 80px 0 180px;
 }
 
-section.whosWillow div.wrapper {
+.whosWillow .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,16 +491,16 @@ section.whosWillow div.wrapper {
           align-items: center;
 }
 
-section.aboutMore {
+.aboutMore {
   padding: 20px 0;
 }
 
-section.aboutMore div.wrapper {
+.aboutMore .wrapper {
   max-width: 100%;
 }
 
-section.aboutMore div.favouriteThings,
-section.aboutMore div.bucketList {
+.aboutMore .favouriteThings,
+.aboutMore .bucketList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,60 +509,60 @@ section.aboutMore div.bucketList {
           align-items: center;
 }
 
-section.aboutMore div.favouriteThings div.imageContainer,
-section.aboutMore div.bucketList div.imageContainer {
+.aboutMore .favouriteThings .imageContainer,
+.aboutMore .bucketList .imageContainer {
   min-width: 50%;
   position: relative;
 }
 
-section.aboutMore div.favouriteThings div.imageContainer img,
-section.aboutMore div.bucketList div.imageContainer img {
+.aboutMore .favouriteThings .imageContainer img,
+.aboutMore .bucketList .imageContainer img {
   width: 80%;
   position: relative;
 }
 
-section.aboutMore div.favouriteThings div.textContainer,
-section.aboutMore div.bucketList div.textContainer {
+.aboutMore .favouriteThings .textContainer,
+.aboutMore .bucketList .textContainer {
   width: 50%;
 }
 
-div.favouriteThings div.imageContainer {
+.favouriteThings .imageContainer {
   background: #709b6b;
   bottom: 40px;
 }
 
-div.favouriteThings div.imageContainer img {
+.favouriteThings .imageContainer img {
   bottom: 20px;
   left: 125px;
 }
 
-div.favouriteThings div.textContainer {
-  margin-top: -20px;
+.favouriteThings .textContainer {
+  margin-top: -30px;
   padding: 0 100px 0 80px;
 }
 
-div.bucketList div.imageContainer {
+.bucketList .imageContainer {
   background: #345231;
   top: 60px;
 }
 
-div.bucketList div.imageContainer img {
-  bottom: 20px;
-  right: 20px;
+.bucketList .imageContainer img {
+  bottom: 15px;
+  right: 15px;
 }
 
-div.bucketList div.textContainer {
+.bucketList .textContainer {
   text-align: right;
-  margin-top: -70px;
+  margin-top: -60px;
   padding: 0 100px 0 80px;
 }
 
-section.willowsJourney {
+.willowsJourney {
   background: #f6f6f6;
   padding: 80px 0;
 }
 
-section.willowsJourney div.wrapper {
+.willowsJourney .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,7 +574,7 @@ section.willowsJourney div.wrapper {
           justify-content: center;
 }
 
-section.willowsJourney div.wrapper div.imageContainer {
+.willowsJourney .wrapper .imageContainer {
   min-width: 20%;
   background: #709b6b;
   position: relative;
@@ -581,22 +582,22 @@ section.willowsJourney div.wrapper div.imageContainer {
   left: 15px;
 }
 
-section.willowsJourney div.wrapper div.imageContainer img {
+.willowsJourney .wrapper .imageContainer img {
   position: relative;
   bottom: 15px;
   right: 15px;
 }
 
-section.willowsJourney div.wrapper div.textContainer {
+.willowsJourney .wrapper .textContainer {
   width: 80%;
   padding-left: 100px;
 }
 
-section.landscapeImage div.wrapper {
+.landscapeImage .wrapper {
   max-width: 100%;
 }
 
-section.gallery ul.wrapper {
+.gallery .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,10 +607,42 @@ section.gallery ul.wrapper {
   padding: 100px 0;
 }
 
-section.gallery li:nth-of-type(2) {
+.gallery li:nth-of-type(2) {
   margin: 0 30px;
 }
 
-footer {
+.homeFooter {
   background: #f6f6f6;
+}
+
+.homeFooter .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.homeFooter .wrapper section {
+  width: 50%;
+}
+
+.homeFooter .wrapper section .footerTitles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeFooter section p {
+  margin-left: 63px;
+}
+
+.homeFooter i {
+  background: #e4a436;
+  padding: 12px;
+  border-radius: 50%;
 }

@@ -22,7 +22,7 @@ h1 {
   color: $whiteShade;
 }
 
-section.hero h1 {
+.hero h1 {
   font-size: 12.5rem;
 }
 
@@ -36,9 +36,11 @@ h3 {
 
 h4 {
   font-size: 2.4rem;
+  margin: 0;
+  padding: 0 20px;
 }
 
-nav.menu ul {
+.menu ul {
   font-weight: 700;
   line-height: 2.9rem;
   text-transform: uppercase;
@@ -57,15 +59,16 @@ nav.menu ul {
   }
 }
 
-a.button {
+.button {
   font-family: $mainFont;
   text-decoration: none;
   color: $black;
   font-size: 2rem;
   line-height: 3.2rem;
   text-transform: uppercase;
-  &:hover {
-    color: $accent;
+  &:hover,
+  &:focus {
+    color: $black;
   }
 }
 
