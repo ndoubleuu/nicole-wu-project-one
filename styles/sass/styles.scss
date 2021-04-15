@@ -73,6 +73,7 @@ p {
     min-width: 20%;
     position: relative;
     top: 70px;
+    left: 20px;
     img {
       position: relative;
       bottom: 20px;
@@ -107,6 +108,7 @@ section.aboutMore {
       min-width: 50%;
       position: relative;
       img {
+        width: 80%;
         position: relative;
       }
     }
@@ -123,12 +125,12 @@ div.favouriteThings {
     bottom: 40px;
     img {
       bottom: 20px;
-      left: 60px;
+      left: 125px;
     }
   }
   div.textContainer {
     margin-top: -20px;
-    padding: 0 50px 0 80px;
+    padding: 0 100px 0 80px;
   }
 }
 
@@ -145,7 +147,7 @@ div.bucketList {
   div.textContainer {
     text-align: right;
     margin-top: -70px;
-    padding: 0 100px 0 50px;
+    padding: 0 100px 0 80px;
   }
 }
 
@@ -187,4 +189,9 @@ section.landscapeImage {
 section.gallery ul.wrapper {
   display: flex;
   justify-content: center;
+  padding: 100px 0;
+}
+
+section.gallery li:nth-of-type(2) {
+  margin: 0 30px;
 }
