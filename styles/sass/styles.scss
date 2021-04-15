@@ -66,3 +66,59 @@ section.whosWillow {
     align-items: center;
   }
 }
+
+// ** FAVOURITE THINGS, BUCKET LIST (.aboutMore) **
+section.aboutMore {
+  div.wrapper {
+    max-width: 100%;
+  }
+  div.firstPart,
+  div.secondPart {
+    display: flex;
+    align-items: center;
+    div.imageContainer {
+      width: 55%;
+      position: relative;
+      img {
+        position: relative;
+      }
+    }
+    div.textContainer {
+      width: 45%;
+      padding: 0 50px;
+    }
+  }
+}
+
+// (first part)
+div.firstPart div.imageContainer {
+  background: $greenGrey;
+  bottom: 50px;
+  img {
+    bottom: 20px;
+    left: 120px;
+    padding-right: 150px;
+  }
+}
+
+// (second part)
+div.secondPart {
+  div.imageContainer {
+    background: $pine;
+    top: 50px;
+    img {
+      bottom: 20px;
+      right: 20px;
+      padding-right: 150px;
+    }
+  }
+  div.textContainer {
+    text-align: right;
+    margin-top: -135px;
+  }
+}
+
+// ** WILLOW'S JOURNEY **
+section.willowsJourney {
+  background: $whiteShade;
+}

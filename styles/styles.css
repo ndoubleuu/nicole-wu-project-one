@@ -459,3 +459,65 @@ section.whosWillow div.wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
+
+section.aboutMore div.wrapper {
+  max-width: 100%;
+}
+
+section.aboutMore div.firstPart,
+section.aboutMore div.secondPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.aboutMore div.firstPart div.imageContainer,
+section.aboutMore div.secondPart div.imageContainer {
+  width: 55%;
+  position: relative;
+}
+
+section.aboutMore div.firstPart div.imageContainer img,
+section.aboutMore div.secondPart div.imageContainer img {
+  position: relative;
+}
+
+section.aboutMore div.firstPart div.textContainer,
+section.aboutMore div.secondPart div.textContainer {
+  width: 45%;
+  padding: 0 50px;
+}
+
+div.firstPart div.imageContainer {
+  background: #709b6b;
+  bottom: 50px;
+}
+
+div.firstPart div.imageContainer img {
+  bottom: 20px;
+  left: 120px;
+  padding-right: 150px;
+}
+
+div.secondPart div.imageContainer {
+  background: #345231;
+  top: 50px;
+}
+
+div.secondPart div.imageContainer img {
+  bottom: 20px;
+  right: 20px;
+  padding-right: 150px;
+}
+
+div.secondPart div.textContainer {
+  text-align: right;
+  margin-top: -135px;
+}
+
+section.willowsJourney {
+  background: #f6f6f6;
+}
