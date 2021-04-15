@@ -51,9 +51,6 @@ nav.menu ul {
     font-family: $secondFont;
     color: $whiteShade;
     text-decoration: none;
-    &:hover {
-      color: $accent;
-    }
   }
   li a.selected {
     color: $accent;

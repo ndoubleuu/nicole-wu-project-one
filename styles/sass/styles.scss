@@ -39,11 +39,19 @@ header {
   }
 }
 
+nav.menu a {
+  transition: all 0.2s;
+  &:hover {
+    color: $accent;
+  }
+}
+
 a.button {
   background: $accent;
   padding: 10px 20px;
-  transition: 0.2s;
-  &:hover {
+  transition: all 0.2s;
+  &:hover,
+  &:focus {
     color: black;
     background: #fde4b8;
   }

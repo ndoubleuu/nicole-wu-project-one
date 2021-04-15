@@ -327,10 +327,6 @@ nav.menu ul li a {
   text-decoration: none;
 }
 
-nav.menu ul li a:hover {
-  color: #e4a436;
-}
-
 nav.menu ul li a.selected {
   color: #e4a436;
 }
@@ -400,14 +396,23 @@ header nav.menu ul li {
   padding: 0 20px;
 }
 
+nav.menu a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav.menu a:hover {
+  color: #e4a436;
+}
+
 a.button {
   background: #e4a436;
   padding: 10px 20px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-a.button:hover {
+a.button:hover, a.button:focus {
   color: black;
   background: #fde4b8;
 }
