@@ -440,7 +440,7 @@ p {
 
 .hero div.imageContainer {
   background-color: #fff;
-  min-width: 35%;
+  min-width: 20%;
   position: relative;
   top: 70px;
 }
@@ -470,6 +470,10 @@ section.whosWillow div.wrapper {
           align-items: center;
 }
 
+section.aboutMore {
+  padding: 20px 0;
+}
+
 section.aboutMore div.wrapper {
   max-width: 100%;
 }
@@ -486,7 +490,7 @@ section.aboutMore div.bucketList {
 
 section.aboutMore div.favouriteThings div.imageContainer,
 section.aboutMore div.bucketList div.imageContainer {
-  width: 50%;
+  min-width: 50%;
   position: relative;
 }
 
@@ -498,38 +502,37 @@ section.aboutMore div.bucketList div.imageContainer img {
 section.aboutMore div.favouriteThings div.textContainer,
 section.aboutMore div.bucketList div.textContainer {
   width: 50%;
-  padding: 20px 105px 20px 60px;
 }
 
 div.favouriteThings div.imageContainer {
   background: #709b6b;
-  bottom: 30px;
+  bottom: 40px;
 }
 
 div.favouriteThings div.imageContainer img {
   bottom: 20px;
-  left: 130px;
-  padding-right: 150px;
+  left: 60px;
 }
 
 div.favouriteThings div.textContainer {
   margin-top: -20px;
+  padding: 0 50px 0 80px;
 }
 
 div.bucketList div.imageContainer {
   background: #345231;
-  top: 50px;
+  top: 60px;
 }
 
 div.bucketList div.imageContainer img {
   bottom: 20px;
   right: 20px;
-  padding-right: 150px;
 }
 
 div.bucketList div.textContainer {
   text-align: right;
   margin-top: -70px;
+  padding: 0 100px 0 50px;
 }
 
 section.willowsJourney {
@@ -550,11 +553,33 @@ section.willowsJourney div.wrapper {
 }
 
 section.willowsJourney div.wrapper div.imageContainer {
-  width: 20%;
+  min-width: 20%;
   background: #709b6b;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+section.willowsJourney div.wrapper div.imageContainer img {
+  position: relative;
+  bottom: 15px;
+  right: 15px;
 }
 
 section.willowsJourney div.wrapper div.textContainer {
   width: 80%;
-  padding: 0 100px;
+  padding-left: 100px;
+}
+
+section.landscapeImage div.wrapper {
+  max-width: 100%;
+}
+
+section.gallery ul.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
