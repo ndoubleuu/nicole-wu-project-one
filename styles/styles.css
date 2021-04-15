@@ -39,85 +39,13 @@ hr {
   overflow: visible;
 }
 
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-audio,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
 img {
   border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
 }
 
 button,
@@ -234,15 +162,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -255,7 +174,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -265,7 +184,7 @@ html {
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0);
   overflow: hidden;
 }
 
@@ -317,8 +236,10 @@ h4 {
   text-transform: uppercase;
 }
 
-.menu ul li h2 {
+.menu ul li.willowName {
   font-family: "Abril Fatface", cursive;
+  font-size: 4.2rem;
+  font-weight: 400;
   color: #f6f6f6;
   margin: 0;
 }
@@ -353,8 +274,10 @@ p {
   letter-spacing: 0px;
 }
 
-section.copyright p {
+.copyright {
+  font-family: "Montserrat", sans-serif;
   color: #fff;
+  text-align: center;
 }
 
 body {
@@ -424,12 +347,8 @@ p {
 
 .copyright {
   background: #1f1f1f;
-}
-
-.copyright p {
   margin: 0;
   padding: 10px 0;
-  text-align: center;
 }
 
 .hero {
