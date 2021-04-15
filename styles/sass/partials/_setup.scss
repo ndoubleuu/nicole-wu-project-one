@@ -221,23 +221,3 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-//general styles
-
-.wrapper {
-  margin: 0 auto;
-  width: 1440px;
-  max-width: 80%;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  li {
-    list-style: none;
-  }
-}

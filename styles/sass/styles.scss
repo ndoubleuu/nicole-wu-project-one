@@ -6,6 +6,28 @@
 
 //General styles for all pages
 
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 80%;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
 header {
   background: $pine;
   nav.menu ul {
@@ -28,6 +50,10 @@ a.button {
   }
 }
 
+p {
+  padding-bottom: 20px;
+}
+
 // ** HEADER **
 
 .hero {
@@ -46,6 +72,7 @@ a.button {
   }
   div.imageContainer {
     background-color: #fff;
+    min-width: 35%;
     position: relative;
     top: 70px;
     img {
@@ -59,6 +86,7 @@ a.button {
 // ** WHO'S WILLOW? **
 section.whosWillow {
   background: $whiteShade;
+  text-align: center;
   padding: 80px 0 180px;
   div.wrapper {
     display: flex;
@@ -72,37 +100,42 @@ section.aboutMore {
   div.wrapper {
     max-width: 100%;
   }
-  div.firstPart,
-  div.secondPart {
+  div.favouriteThings,
+  div.bucketList {
     display: flex;
     align-items: center;
     div.imageContainer {
-      width: 55%;
+      width: 50%;
       position: relative;
       img {
         position: relative;
       }
     }
     div.textContainer {
-      width: 45%;
-      padding: 0 50px;
+      width: 50%;
+      padding: 20px 105px 20px 60px;
     }
   }
 }
 
-// (first part)
-div.firstPart div.imageContainer {
-  background: $greenGrey;
-  bottom: 50px;
-  img {
-    bottom: 20px;
-    left: 120px;
-    padding-right: 150px;
+// (Favourite Things)
+div.favouriteThings {
+  div.imageContainer {
+    background: $greenGrey;
+    bottom: 30px;
+    img {
+      bottom: 20px;
+      left: 130px;
+      padding-right: 150px;
+    }
+  }
+  div.textContainer {
+    margin-top: -20px;
   }
 }
 
-// (second part)
-div.secondPart {
+// (Bucket List)
+div.bucketList {
   div.imageContainer {
     background: $pine;
     top: 50px;
@@ -114,11 +147,25 @@ div.secondPart {
   }
   div.textContainer {
     text-align: right;
-    margin-top: -135px;
+    margin-top: -70px;
   }
 }
 
 // ** WILLOW'S JOURNEY **
 section.willowsJourney {
   background: $whiteShade;
+  padding: 80px 0;
+  div.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div.imageContainer {
+      width: 20%;
+      background: $greenGrey;
+    }
+    div.textContainer {
+      width: 80%;
+      padding: 0 100px;
+    }
+  }
 }

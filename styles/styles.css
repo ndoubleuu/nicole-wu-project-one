@@ -269,25 +269,6 @@ html {
   overflow: hidden;
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 1440px;
-  max-width: 80%;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -374,6 +355,29 @@ p {
   letter-spacing: 0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 80%;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
 header {
   background: #345231;
 }
@@ -404,6 +408,10 @@ a.button:hover {
   background: #fde4b8;
 }
 
+p {
+  padding-bottom: 20px;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +440,7 @@ a.button:hover {
 
 .hero div.imageContainer {
   background-color: #fff;
+  min-width: 35%;
   position: relative;
   top: 70px;
 }
@@ -444,6 +453,7 @@ a.button:hover {
 
 section.whosWillow {
   background: #f6f6f6;
+  text-align: center;
   padding: 80px 0 180px;
 }
 
@@ -464,8 +474,8 @@ section.aboutMore div.wrapper {
   max-width: 100%;
 }
 
-section.aboutMore div.firstPart,
-section.aboutMore div.secondPart {
+section.aboutMore div.favouriteThings,
+section.aboutMore div.bucketList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,50 +484,77 @@ section.aboutMore div.secondPart {
           align-items: center;
 }
 
-section.aboutMore div.firstPart div.imageContainer,
-section.aboutMore div.secondPart div.imageContainer {
-  width: 55%;
+section.aboutMore div.favouriteThings div.imageContainer,
+section.aboutMore div.bucketList div.imageContainer {
+  width: 50%;
   position: relative;
 }
 
-section.aboutMore div.firstPart div.imageContainer img,
-section.aboutMore div.secondPart div.imageContainer img {
+section.aboutMore div.favouriteThings div.imageContainer img,
+section.aboutMore div.bucketList div.imageContainer img {
   position: relative;
 }
 
-section.aboutMore div.firstPart div.textContainer,
-section.aboutMore div.secondPart div.textContainer {
-  width: 45%;
-  padding: 0 50px;
+section.aboutMore div.favouriteThings div.textContainer,
+section.aboutMore div.bucketList div.textContainer {
+  width: 50%;
+  padding: 20px 105px 20px 60px;
 }
 
-div.firstPart div.imageContainer {
+div.favouriteThings div.imageContainer {
   background: #709b6b;
-  bottom: 50px;
+  bottom: 30px;
 }
 
-div.firstPart div.imageContainer img {
+div.favouriteThings div.imageContainer img {
   bottom: 20px;
-  left: 120px;
+  left: 130px;
   padding-right: 150px;
 }
 
-div.secondPart div.imageContainer {
+div.favouriteThings div.textContainer {
+  margin-top: -20px;
+}
+
+div.bucketList div.imageContainer {
   background: #345231;
   top: 50px;
 }
 
-div.secondPart div.imageContainer img {
+div.bucketList div.imageContainer img {
   bottom: 20px;
   right: 20px;
   padding-right: 150px;
 }
 
-div.secondPart div.textContainer {
+div.bucketList div.textContainer {
   text-align: right;
-  margin-top: -135px;
+  margin-top: -70px;
 }
 
 section.willowsJourney {
   background: #f6f6f6;
+  padding: 80px 0;
+}
+
+section.willowsJourney div.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.willowsJourney div.wrapper div.imageContainer {
+  width: 20%;
+  background: #709b6b;
+}
+
+section.willowsJourney div.wrapper div.textContainer {
+  width: 80%;
+  padding: 0 100px;
 }
