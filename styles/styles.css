@@ -355,6 +355,10 @@ p {
   letter-spacing: 0px;
 }
 
+section.copyright p {
+  color: #fff;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -410,6 +414,16 @@ a.button:hover {
 
 p {
   padding-bottom: 20px;
+}
+
+.copyright {
+  background: #1f1f1f;
+}
+
+.copyright p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .hero {
