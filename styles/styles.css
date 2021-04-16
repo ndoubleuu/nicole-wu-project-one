@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -280,6 +281,44 @@ p {
   text-align: center;
 }
 
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type="submit"] {
+  font-family: "Abril Fatface", cursive;
+  text-transform: uppercase;
+}
+
+aside h2 {
+  font-size: 2.4rem;
+}
+
+article h2 {
+  font-size: 3.2rem;
+}
+
+.blog h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.recentPosts li {
+  font-family: "Montserrat", sans-serif;
+  line-height: 3.2rem;
+  letter-spacing: 0;
+}
+
+.findOutMore {
+  text-decoration: none;
+  color: #709b6b;
+  font-weight: 700;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -321,34 +360,39 @@ header .menu ul li {
   padding: 0 20px;
 }
 
-.menu a {
+header .menu ul a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.menu a:hover {
+header .menu ul a:hover {
   color: #e4a436;
 }
 
-.button {
+.button,
+input[type="submit"] {
   background: #e4a436;
   padding: 10px 20px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  border: none;
 }
 
-.button:hover, .button:focus {
+.button:hover, .button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
   background: #fde4b8;
-}
-
-p {
-  padding-bottom: 20px;
+  cursor: pointer;
 }
 
 .copyright {
   background: #1f1f1f;
   margin: 0;
   padding: 10px 0;
+}
+
+.home p {
+  padding-bottom: 20px;
 }
 
 .hero {
@@ -564,4 +608,128 @@ p {
   background: #e4a436;
   padding: 12px;
   border-radius: 50%;
+}
+
+.blog {
+  background: #f6f6f6;
+}
+
+.blog .title {
+  background-image: url("../assets/blog-image-1.jpg");
+  height: 400px;
+  position: relative;
+}
+
+.blog .title h1 {
+  margin: 0;
+  position: absolute;
+  bottom: -16px;
+  padding-left: 150px;
+}
+
+.blog main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog main .wrapper aside,
+.blog main .wrapper article {
+  background: #fff;
+  padding: 40px;
+}
+
+.blog main .wrapper .asideContainer,
+.blog main .wrapper .articleContainer {
+  padding: 100px 0;
+}
+
+.blog main .wrapper .asideContainer {
+  min-width: 30%;
+  margin-right: 30px;
+}
+
+.blog main .wrapper .asideContainer aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog main .wrapper .asideContainer aside h2 {
+  padding-top: 10px;
+}
+
+.blog main .wrapper .asideContainer aside p {
+  margin: 0;
+}
+
+.blog main .wrapper .asideContainer .recentPosts {
+  margin-top: 30px;
+}
+
+.blog main .wrapper .asideContainer .recentPosts li::before {
+  content: "•";
+  padding: 0 12px;
+}
+
+.blog main .wrapper .blogArticle {
+  margin-bottom: 40px;
+  border-bottom: 5px solid #709b6b;
+}
+
+.blog main .wrapper .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.blog main .wrapper .comment .imageContainer {
+  min-width: 20%;
+  padding-right: 20px;
+}
+
+.blog main .wrapper .comment .textContainer h3 {
+  margin: 0;
+}
+
+.blog main .wrapper .comment .textContainer p {
+  margin: 0;
+}
+
+.blog main .wrapper .comment2 {
+  border-bottom: 5px solid #709b6b;
+}
+
+form {
+  margin-top: 40px;
+}
+
+form input {
+  width: calc((100% / 2) - 7.3px);
+  border: none;
+  padding: 20px 30px;
+}
+
+form input[type="text"] {
+  margin-right: 10px;
+}
+
+form textarea {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  padding: 40px 30px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
 }

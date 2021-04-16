@@ -86,3 +86,44 @@ p {
   color: #fff;
   text-align: center;
 }
+
+input,
+textarea {
+  font-family: $secondFont;
+}
+
+input[type="submit"] {
+  font-family: $mainFont;
+  text-transform: uppercase;
+}
+
+//page-specific styles
+
+//BLOG & NEWS
+aside h2 {
+  font-size: 2.4rem;
+}
+
+article h2 {
+  font-size: 3.2rem;
+}
+
+.blog h3 {
+  font-family: $secondFont;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.recentPosts li {
+  font-family: $secondFont;
+  line-height: 3.2rem;
+  letter-spacing: 0;
+}
+
+.findOutMore {
+  text-decoration: none;
+  color: $greenGrey;
+  font-weight: 700;
+}

@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
-    <header class="blogHeader">
+<body class="blog">
+    <header>
         <div class="wrapper">
             <nav class="menu">
                 <ul class="uppercase">
@@ -21,55 +21,69 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Blog & News</h1>
         </div>
+        <section class="title">
+            <h1>Blog & News</h1>
+        </section>
     </header>
 
     <main>
         <div class="wrapper">
-            <aside class="aboutWillow">
-                <img src="./assets/blog-image-2.jpg" alt="Girl in yellow jacket, with dangling leaves aesthetically covering parts of her face.">
-                <h2>About Willow</h2>
-                <p>Lorem ipsum nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="" class="findOutMore">Find out more</a>.</p>
-            </aside>
-            <aside class="recentPosts">
-                <h2>Recent Posts</h2>
-                <ul>
-                    <li>Donec facilisis tortor ut</li>
-                    <li>Augue lacinia at viverra</li>
-                    <li>Semper sed sapien metus</li>
-                    <li>Scelerisque nec pharetra id</li>
-                </ul>
-            </aside>
-            <article>
-                <h2>My Favourite Travel Destinations</h2>
-                <h3>Monday October 8th, 2018 by Willow</h3>
-                <p>Curabitur lobortis id lorem amet consectetur, adipisicing elit. Dolore voluptatum, distinctio nobis quisquam, cum quas cupiditate magnam excepturi facere, explicabo nihil expedita odit suscipit sed qui ratione possimus facilis doloremque?</p>
-                <p>In imperdiet eros id sit amet, consectetur adipisicing elit. Ut illo eum placeat assumenda, harum autem, quo, accusamus dolorem commodi doloremque modi! Provident dolorem veniam expedita nam saepe dolor, magnam aspernatur animi illum quasi architecto suscipit tempora eius pariatur quaerat voluptates quod. Quos eum pariatur tenetur enim molestiae dignissimos iure iste?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed facilis voluptates, libero, voluptate ab fugiat blanditiis accusantium eligendi architecto repellendus laudantium magni possimus nemo deleniti qui, aliquam voluptas provident neque est cum sunt corporis error? Eos unde vero aliquid dolores porro ad necessitatibus eveniet perspiciatis labore suscipit placeat quo maxime numquam harum veniam, quam quaerat consectetur earum illo culpa quas molestiae odit, voluptates non. Architecto, sed. Ut neque delectus totam dolor obcaecati. Cupiditate dicta distinctio nulla nobis harum aliquam sit nisi ipsa numquam qui quidem illo optio, fugiat id eaque in? Alias et necessitatibus culpa nemo dolores perspiciatis asperiores repellat!</p>
-                <p>Ut id consectetur sit amet consectetur adipisicing elit. Iure tempora, totam, incidunt unde recusandae, eveniet est natus id nobis ex commodi perspiciatis! Aut, officia delectus?</p>
-                <p>In imperdiet dolor sit amet consectetur adipisicing elit. Laborum tempora consequatur tenetur necessitatibus repellendus perspiciatis quis. Atque, quidem! Repudiandae adipisci nemo, distinctio inventore dolor deleniti ea doloribus. Quam, inventore necessitatibus asperiores esse ut maiores sint repudiandae nostrum consequatur ducimus? Distinctio aliquid saepe iusto obcaecati eligendi?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsam molestiae delectus! Deleniti repudiandae voluptatibus, nam iure rerum praesentium fugit quisquam ex incidunt explicabo, aliquid ullam! Error, repellendus laborum saepe a eum at atque reprehenderit ab cumque, aliquid tenetur nobis fugiat explicabo nihil quas enim?</p>
-            </article>
-            <article>
-                <img src="./assets/blog-image-3.jpg" alt="">
-                <h3>Tuesday October 9th, 2018 by Barb</h3>
-                <p>Fusce vehicula lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum ducimus accusamus beatae quaerat odio ad laudantium iusto quod earum, quam eligendi nostrum architecto voluptates ratione sapiente tempora facere repellat corporis magni delectus veniam id?</p>
-            </article>
-            <article>
-                <img src="./assets/blog-image-4.jpg" alt="">
-                <h3>Wednesday October 10th, 2018 by Daisy</h3>
-                <p>Donec viverra Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quo expedita laudantium molestiae? Quisquam praesentium fuga numquam hic necessitatibus ullam?</p>
-            </article>
-            <form action="">
-                <label for="name" class="visuallyHidden">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name">
-                <label for="email" class="visuallyHidden">Email address</label>
-                <input type="email" id="email" name="email" placeholder="Email address">
-                <label for="comment" class="visuallyHidden">Comment</label>
-                <textarea id="comment" name="comment" cols="50" rows="10" placeholder="Comment"></textarea>
-                <input type="submit" value="Post Comment">
-            </form>
+            <div class="asideContainer">
+                <aside class="aboutWillow">
+                    <img src="./assets/blog-image-2.jpg" alt="Girl in yellow jacket, with dangling leaves aesthetically covering parts of her face.">
+                    <h2>About Willow</h2>
+                    <p>Lorem ipsum nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="" class="findOutMore">Find out more</a>.</p>
+                </aside>
+                <aside class="recentPosts">
+                    <h2>Recent Posts</h2>
+                    <ul>
+                        <li>Donec facilisis tortor ut</li>
+                        <li>Augue lacinia at viverra</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Scelerisque nec pharetra id</li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="articleContainer">
+                <article class="blogArticle">
+                    <h2>My Favourite Travel Destinations</h2>
+                    <h3>Monday October 8th, 2018 by Willow</h3>
+                    <p>Curabitur lobortis id lorem amet consectetur, adipisicing elit. Dolore voluptatum, distinctio nobis quisquam, cum quas cupiditate magnam excepturi facere, explicabo nihil expedita odit suscipit sed qui ratione possimus facilis doloremque?</p>
+                    <p>In imperdiet eros id sit amet, consectetur adipisicing elit. Ut illo eum placeat assumenda, harum autem, quo, accusamus dolorem commodi doloremque modi! Provident dolorem veniam expedita nam saepe dolor, magnam aspernatur animi illum quasi architecto suscipit tempora eius pariatur quaerat voluptates quod. Quos eum pariatur tenetur enim molestiae dignissimos iure iste?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed facilis voluptates, libero, voluptate ab fugiat blanditiis accusantium eligendi architecto repellendus laudantium magni possimus nemo deleniti qui, aliquam voluptas provident neque est cum sunt corporis error? Eos unde vero aliquid dolores porro ad necessitatibus eveniet perspiciatis labore suscipit placeat quo maxime numquam harum veniam, quam quaerat consectetur earum illo culpa quas molestiae odit, voluptates non. Architecto, sed. Ut neque delectus totam dolor obcaecati. Cupiditate dicta distinctio nulla nobis harum aliquam sit nisi ipsa numquam qui quidem illo optio, fugiat id eaque in? Alias et necessitatibus culpa nemo dolores perspiciatis asperiores repellat!</p>
+                    <p>Ut id consectetur sit amet consectetur adipisicing elit. Iure tempora, totam, incidunt unde recusandae, eveniet est natus id nobis ex commodi perspiciatis! Aut, officia delectus?</p>
+                    <p>In imperdiet dolor sit amet consectetur adipisicing elit. Laborum tempora consequatur tenetur necessitatibus repellendus perspiciatis quis. Atque, quidem! Repudiandae adipisci nemo, distinctio inventore dolor deleniti ea doloribus. Quam, inventore necessitatibus asperiores esse ut maiores sint repudiandae nostrum consequatur ducimus? Distinctio aliquid saepe iusto obcaecati eligendi?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsam molestiae delectus! Deleniti repudiandae voluptatibus, nam iure rerum praesentium fugit quisquam ex incidunt explicabo, aliquid ullam! Error, repellendus laborum saepe a eum at atque reprehenderit ab cumque, aliquid tenetur nobis fugiat explicabo nihil quas enim?</p>
+                </article>
+                <article class="comment comment1">
+                    <div class="imageContainer">
+                        <img src="./assets/blog-image-3.jpg" alt="">
+                    </div>
+                    <div class="textContainer">
+                        <h3>Tuesday October 9th, 2018 by Barb</h3>
+                        <p>Fusce vehicula lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum ducimus accusamus beatae quaerat odio ad laudantium iusto quod earum, quam eligendi nostrum architecto voluptates ratione sapiente tempora facere repellat corporis magni delectus veniam id?</p>
+                    </div>
+                </article>
+                <article class="comment comment2">
+                    <div class="imageContainer">
+                        <img src="./assets/blog-image-4.jpg" alt="">
+                    </div>
+                    <div class="textContainer">
+                        <h3>Wednesday October 10th, 2018 by Daisy</h3>
+                        <p>Donec viverra Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quo expedita laudantium molestiae? Quisquam praesentium fuga numquam hic necessitatibus ullam?</p>
+                    </div>
+                </article>
+                <form action="">
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name"/>
+                    <label for="email" class="visuallyHidden">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Email address"/>
+                    <label for="comment" class="visuallyHidden">Comment</label>
+                    <textarea id="comment" name="comment" cols="50" rows="10" placeholder="Comment"></textarea>
+                    <input type="submit" value="Post Comment"/>
+                </form>
+            </div>
         </div>
     </main>
 

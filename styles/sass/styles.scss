@@ -36,28 +36,26 @@ header {
     li {
       padding: 0 20px;
     }
+    a {
+      transition: all 0.2s;
+      &:hover {
+        color: $accent;
+      }
+    }
   }
 }
 
-.menu a {
-  transition: all 0.2s;
-  &:hover {
-    color: $accent;
-  }
-}
-
-.button {
+.button,
+input[type="submit"] {
   background: $accent;
   padding: 10px 20px;
   transition: all 0.2s;
+  border: none;
   &:hover,
   &:focus {
     background: #fde4b8;
+    cursor: pointer;
   }
-}
-
-p {
-  padding-bottom: 20px;
 }
 
 .copyright {
@@ -67,6 +65,10 @@ p {
 }
 
 // ** HOME **
+
+.home p {
+  padding-bottom: 20px;
+}
 
 // HEADER
 .hero {
@@ -241,4 +243,102 @@ p {
 
 // ** BLOG & NEWS **
 
+// GENERAL
+.blog {
+  background: $whiteShade;
+}
+
 // HEADER
+.blog .title {
+  background-image: url("../assets/blog-image-1.jpg");
+  height: 400px;
+  position: relative;
+  h1 {
+    margin: 0;
+    position: absolute;
+    bottom: -16px;
+    padding-left: 150px;
+  }
+}
+
+// MAIN
+.blog main .wrapper {
+  display: flex;
+  justify-content: center;
+  aside,
+  article {
+    background: #fff;
+    padding: 40px;
+  }
+  .asideContainer,
+  .articleContainer {
+    padding: 100px 0;
+  }
+  .asideContainer {
+    min-width: 30%;
+    margin-right: 30px;
+    aside {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        padding-top: 10px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .recentPosts {
+      margin-top: 30px;
+      li::before {
+        content: "•";
+        padding: 0 12px;
+      }
+    }
+  }
+  .blogArticle {
+    margin-bottom: 40px;
+    border-bottom: 5px solid $greenGrey;
+  }
+  .comment {
+    display: flex;
+    margin: 20px 0;
+    .imageContainer {
+      min-width: 20%;
+      padding-right: 20px;
+    }
+    .textContainer {
+      h3 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .comment2 {
+    border-bottom: 5px solid $greenGrey;
+  }
+}
+
+// FORM
+form {
+  margin-top: 40px;
+  input {
+    width: calc((100% / 2) - 7.3px);
+    border: none;
+    padding: 20px 30px;
+  }
+  input[type="text"] {
+    margin-right: 10px;
+  }
+  textarea {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    padding: 40px 30px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
