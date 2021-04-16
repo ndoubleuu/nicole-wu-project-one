@@ -249,7 +249,7 @@ input[type="submit"] {
 }
 
 // HEADER
-.blog .title {
+.title {
   background-image: url("../assets/blog-image-1.jpg");
   height: 400px;
   position: relative;
@@ -268,7 +268,7 @@ input[type="submit"] {
   aside,
   article {
     background: #fff;
-    padding: 40px;
+    padding: 30px;
   }
   .asideContainer,
   .articleContainer {
@@ -340,5 +340,52 @@ form {
   input[type="submit"] {
     width: 100%;
     margin-top: 20px;
+  }
+}
+
+// *******************************
+
+// ** CONTACT ME **
+
+.contact {
+  background-color: $whiteShade;
+}
+
+// HEADER
+.contact .title {
+  background-image: url("../assets/contact-image-1.jpg");
+}
+
+// MAIN
+.contact main .wrapper {
+  display: flex;
+  aside {
+    background: #fff;
+    height: 30%;
+    padding: 30px;
+    margin: 100px 30px 0 0;
+    width: 35%;
+    .social {
+      display: flex;
+      li a {
+        padding-right: 20px;
+        color: $pine;
+      }
+    }
+  }
+  form {
+    width: 65%;
+    margin: 100px 0;
+  }
+}
+
+address {
+  font-style: normal;
+  .contactEmail {
+    font-weight: 700;
+    padding: 20px 0;
+  }
+  p {
+    margin: 0;
   }
 }

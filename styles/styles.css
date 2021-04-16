@@ -175,6 +175,20 @@ html {
           box-sizing: inherit;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -614,13 +628,13 @@ input[type="submit"]:focus {
   background: #f6f6f6;
 }
 
-.blog .title {
+.title {
   background-image: url("../assets/blog-image-1.jpg");
   height: 400px;
   position: relative;
 }
 
-.blog .title h1 {
+.title h1 {
   margin: 0;
   position: absolute;
   bottom: -16px;
@@ -639,7 +653,7 @@ input[type="submit"]:focus {
 .blog main .wrapper aside,
 .blog main .wrapper article {
   background: #fff;
-  padding: 40px;
+  padding: 30px;
 }
 
 .blog main .wrapper .asideContainer,
@@ -732,4 +746,55 @@ form textarea {
 form input[type="submit"] {
   width: 100%;
   margin-top: 20px;
+}
+
+.contact {
+  background-color: #f6f6f6;
+}
+
+.contact .title {
+  background-image: url("../assets/contact-image-1.jpg");
+}
+
+.contact main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact main .wrapper aside {
+  background: #fff;
+  height: 30%;
+  padding: 30px;
+  margin: 100px 30px 0 0;
+  width: 35%;
+}
+
+.contact main .wrapper aside .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact main .wrapper aside .social li a {
+  padding-right: 20px;
+  color: #345231;
+}
+
+.contact main .wrapper form {
+  width: 65%;
+  margin: 100px 0;
+}
+
+address {
+  font-style: normal;
+}
+
+address .contactEmail {
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+address p {
+  margin: 0;
 }
