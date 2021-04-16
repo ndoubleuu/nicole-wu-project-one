@@ -631,6 +631,7 @@ input[type="submit"]:focus {
 .title {
   background-image: url("../assets/blog-image-1.jpg");
   height: 400px;
+  background-position: center;
   position: relative;
 }
 
@@ -749,7 +750,7 @@ form input[type="submit"] {
 }
 
 .contact {
-  background-color: #f6f6f6;
+  background: #f6f6f6;
 }
 
 .contact .title {
