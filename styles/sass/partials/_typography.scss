@@ -3,10 +3,10 @@ html {
 }
 
 body {
-  font-family: $mainFont;
+  font-family: $secondFont;
   font-size: 2rem;
   color: $black;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
 }
 
 h1,
@@ -40,19 +40,26 @@ h4 {
   padding: 0 20px;
 }
 
+p {
+  font-family: $mainFont;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0;
+}
+
 .menu ul {
   font-weight: 700;
   line-height: 2.9rem;
   text-transform: uppercase;
   li.willowName {
-    font-family: $mainFont;
+    font-family: $secondFont;
     font-size: 4.2rem;
     font-weight: 400;
     color: $whiteShade;
     margin: 0;
   }
   li a {
-    font-family: $secondFont;
+    font-family: $mainFont;
     color: $whiteShade;
     text-decoration: none;
   }
@@ -62,7 +69,7 @@ h4 {
 }
 
 .button {
-  font-family: $mainFont;
+  font-family: $secondFont;
   text-decoration: none;
   color: $black;
   font-size: 2rem;
@@ -74,26 +81,19 @@ h4 {
   }
 }
 
-p {
-  font-family: $secondFont;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0px;
-}
-
 .copyright {
-  font-family: $secondFont;
-  color: #fff;
+  font-family: $mainFont;
+  color: $white;
   text-align: center;
 }
 
 input,
 textarea {
-  font-family: $secondFont;
+  font-family: $mainFont;
 }
 
 input[type="submit"] {
-  font-family: $mainFont;
+  font-family: $secondFont;
   text-transform: uppercase;
 }
 
@@ -109,7 +109,7 @@ article h2 {
 }
 
 .blog h3 {
-  font-family: $secondFont;
+  font-family: $mainFont;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0;
@@ -117,7 +117,7 @@ article h2 {
 }
 
 .recentPosts li {
-  font-family: $secondFont;
+  font-family: $mainFont;
   line-height: 3.2rem;
   letter-spacing: 0;
 }
@@ -126,4 +126,9 @@ article h2 {
   text-decoration: none;
   color: $greenGrey;
   font-weight: 700;
+}
+
+// CONTACT
+.social i {
+  font-size: 3rem;
 }

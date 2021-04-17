@@ -211,7 +211,7 @@ body {
   font-family: "Abril Fatface", cursive;
   font-size: 2rem;
   color: #1f1f1f;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
 }
 
 h1,
@@ -243,6 +243,13 @@ h4 {
   font-size: 2.4rem;
   margin: 0;
   padding: 0 20px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0;
 }
 
 .menu ul {
@@ -280,13 +287,6 @@ h4 {
 
 .button:hover, .button:focus {
   color: #1f1f1f;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0px;
 }
 
 .copyright {
@@ -333,6 +333,10 @@ article h2 {
   font-weight: 700;
 }
 
+.social i {
+  font-size: 3rem;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -356,11 +360,11 @@ ul li {
   list-style: none;
 }
 
-header {
+.menu {
   background: #345231;
 }
 
-header .menu ul {
+.menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,16 +374,16 @@ header .menu ul {
   padding: 30px 0;
 }
 
-header .menu ul li {
+.menu ul li {
   padding: 0 20px;
 }
 
-header .menu ul a {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+.menu ul a {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-header .menu ul a:hover {
+.menu ul a:hover {
   color: #e4a436;
 }
 
@@ -387,8 +391,8 @@ header .menu ul a:hover {
 input[type="submit"] {
   background: #e4a436;
   padding: 10px 20px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   border: none;
 }
 
@@ -409,6 +413,10 @@ input[type="submit"]:focus {
   padding-bottom: 20px;
 }
 
+.home header {
+  background: #345231;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,7 +434,7 @@ input[type="submit"]:focus {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 .hero .titleContainer img {
@@ -452,7 +460,7 @@ input[type="submit"]:focus {
 .whosWillow {
   background: #f6f6f6;
   text-align: center;
-  padding: 80px 0 180px;
+  padding: 70px 0 160px;
 }
 
 .whosWillow .wrapper {
@@ -514,7 +522,7 @@ input[type="submit"]:focus {
 }
 
 .favouriteThings .textContainer {
-  margin-top: -30px;
+  margin-top: -32px;
   padding: 0 100px 0 80px;
 }
 
@@ -530,7 +538,7 @@ input[type="submit"]:focus {
 
 .bucketList .textContainer {
   text-align: right;
-  margin-top: -60px;
+  margin-top: -50px;
   padding: 0 100px 0 80px;
 }
 
@@ -581,6 +589,9 @@ input[type="submit"]:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 100px 0;
 }
 
@@ -624,22 +635,26 @@ input[type="submit"]:focus {
   border-radius: 50%;
 }
 
+.blog header,
+.contact header {
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.blog header h1,
+.contact header h1 {
+  margin: 0;
+  position: absolute;
+  top: 325px;
+}
+
 .blog {
   background: #f6f6f6;
 }
 
-.title {
+.blog header {
   background-image: url("../assets/blog-image-1.jpg");
-  height: 400px;
-  background-position: center;
-  position: relative;
-}
-
-.title h1 {
-  margin: 0;
-  position: absolute;
-  bottom: -16px;
-  padding-left: 150px;
 }
 
 .blog main .wrapper {
@@ -687,6 +702,11 @@ input[type="submit"]:focus {
 
 .blog main .wrapper .asideContainer .recentPosts {
   margin-top: 30px;
+}
+
+.blog main .wrapper .asideContainer .recentPosts h2 {
+  padding: 0;
+  margin-top: 0;
 }
 
 .blog main .wrapper .asideContainer .recentPosts li::before {
@@ -738,6 +758,7 @@ form input[type="text"] {
 }
 
 form textarea {
+  resize: none;
   width: 100%;
   margin-top: 20px;
   border: none;
@@ -753,7 +774,7 @@ form input[type="submit"] {
   background: #f6f6f6;
 }
 
-.contact .title {
+.contact header {
   background-image: url("../assets/contact-image-1.jpg");
 }
 
@@ -771,20 +792,26 @@ form input[type="submit"] {
   width: 35%;
 }
 
-.contact main .wrapper aside .social {
+.contact main .wrapper form {
+  width: 65%;
+  margin: 100px 0;
+}
+
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact main .wrapper aside .social li a {
-  padding-right: 20px;
+.social li a {
+  padding-right: 40px;
   color: #345231;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.contact main .wrapper form {
-  width: 65%;
-  margin: 100px 0;
+.social li a:hover {
+  color: #e4a436;
 }
 
 address {
