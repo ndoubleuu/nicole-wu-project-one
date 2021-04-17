@@ -620,11 +620,11 @@ input[type="submit"]:focus {
   margin: 0 30px;
 }
 
-.homeFooter {
+.home footer {
   background: #f6f6f6;
 }
 
-.homeFooter .wrapper {
+.home footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,11 +633,11 @@ input[type="submit"]:focus {
   padding: 50px 0;
 }
 
-.homeFooter .wrapper section {
+.home footer .wrapper section {
   width: 50%;
 }
 
-.homeFooter .wrapper section .footerTitles {
+.home footer .wrapper section .footerTitles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,11 +646,11 @@ input[type="submit"]:focus {
           align-items: center;
 }
 
-.homeFooter section p {
+.home footer section p {
   margin-left: 63px;
 }
 
-.homeFooter i {
+.home footer i {
   background: #e4a436;
   padding: 12px;
   border-radius: 50%;
@@ -673,23 +673,23 @@ input[type="submit"]:focus {
           justify-content: center;
 }
 
+.blog main .wrapper .asideContainer,
+.blog main .wrapper .articleContainer {
+  padding: 100px 0;
+}
+
 .blog main .wrapper aside,
 .blog main .wrapper article {
   background: #fff;
   padding: 30px;
 }
 
-.blog main .wrapper .asideContainer,
-.blog main .wrapper .articleContainer {
-  padding: 100px 0;
-}
-
-.blog main .wrapper .asideContainer {
+.asideContainer {
   min-width: 30%;
   margin-right: 30px;
 }
 
-.blog main .wrapper .asideContainer aside {
+.asideContainer aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,54 +699,54 @@ input[type="submit"]:focus {
           flex-direction: column;
 }
 
-.blog main .wrapper .asideContainer aside h2 {
+.asideContainer aside h2 {
   padding-top: 10px;
 }
 
-.blog main .wrapper .asideContainer aside p {
+.asideContainer aside p {
   margin: 0;
 }
 
-.blog main .wrapper .asideContainer .recentPosts {
+.asideContainer .recentPosts {
   margin-top: 30px;
 }
 
-.blog main .wrapper .asideContainer .recentPosts h2 {
+.asideContainer .recentPosts h2 {
   padding: 0;
   margin-top: 0;
 }
 
-.blog main .wrapper .asideContainer .recentPosts li::before {
+.asideContainer .recentPosts li::before {
   content: "•";
   padding: 12px;
 }
 
-.blog main .wrapper .blogArticle {
+.blogArticle {
   margin-bottom: 40px;
   border-bottom: 5px solid #709b6b;
 }
 
-.blog main .wrapper .comment {
+.comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 20px 0;
 }
 
-.blog main .wrapper .comment .imageContainer {
+.comment .imageContainer {
   min-width: 20%;
   padding-right: 20px;
 }
 
-.blog main .wrapper .comment .textContainer h3 {
+.comment .textContainer h3 {
   margin: 0;
 }
 
-.blog main .wrapper .comment .textContainer p {
+.comment .textContainer p {
   margin: 0;
 }
 
-.blog main .wrapper .comment2 {
+.comment2 {
   border-bottom: 5px solid #709b6b;
 }
 
