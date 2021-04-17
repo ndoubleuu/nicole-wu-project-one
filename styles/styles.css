@@ -333,7 +333,7 @@ article h2 {
   font-weight: 700;
 }
 
-.findOutMore:hover {
+.findOutMore:hover, .findOutMore:focus {
   text-decoration: underline;
 }
 
@@ -387,7 +387,7 @@ ul li {
   transition: all 0.2s ease;
 }
 
-.menu ul a:hover {
+.menu ul a:hover, .menu ul a:focus {
   color: #e4a436;
 }
 
@@ -814,7 +814,7 @@ form input[type="submit"] {
   transition: all 0.2s ease;
 }
 
-.social li a:hover {
+.social li a:hover, .social li a:focus {
   color: #e4a436;
 }
 

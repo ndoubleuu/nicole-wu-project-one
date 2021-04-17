@@ -38,7 +38,8 @@ ul {
     }
     a {
       transition: all 0.2s ease;
-      &:hover {
+      &:hover,
+      &:focus {
         color: $accent;
       }
     }
@@ -393,7 +394,8 @@ form {
     padding-right: 40px;
     color: $pine;
     transition: all 0.2s ease;
-    &:hover {
+    &:hover,
+    &:focus {
       color: $accent;
     }
   }

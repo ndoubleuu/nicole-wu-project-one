@@ -126,7 +126,8 @@ article h2 {
   text-decoration: none;
   color: $greenGrey;
   font-weight: 700;
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }
