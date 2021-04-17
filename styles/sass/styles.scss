@@ -65,6 +65,19 @@ input[type="submit"] {
   padding: 10px 0;
 }
 
+// General styles for Blog + Contact
+.blog header,
+.contact header {
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  h1 {
+    margin: 0;
+    position: absolute;
+    top: 325px;
+  }
+}
+
 // ** HOME **
 
 .home p {
@@ -241,19 +254,6 @@ input[type="submit"] {
 
 // *******************************
 
-// General styles for Blog + Contact
-.blog header,
-.contact header {
-  background-size: cover;
-  height: 400px;
-  position: relative;
-  h1 {
-    margin: 0;
-    position: absolute;
-    top: 325px;
-  }
-}
-
 // ** BLOG & NEWS **
 
 // GENERAL
@@ -300,7 +300,7 @@ input[type="submit"] {
       }
       li::before {
         content: "•";
-        padding: 0 12px;
+        padding: 12px;
       }
     }
   }

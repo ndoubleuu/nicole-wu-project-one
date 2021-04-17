@@ -413,6 +413,20 @@ input[type="submit"]:focus {
   padding: 10px 0;
 }
 
+.blog header,
+.contact header {
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.blog header h1,
+.contact header h1 {
+  margin: 0;
+  position: absolute;
+  top: 325px;
+}
+
 .home p {
   padding-bottom: 20px;
 }
@@ -642,20 +656,6 @@ input[type="submit"]:focus {
   border-radius: 50%;
 }
 
-.blog header,
-.contact header {
-  background-size: cover;
-  height: 400px;
-  position: relative;
-}
-
-.blog header h1,
-.contact header h1 {
-  margin: 0;
-  position: absolute;
-  top: 325px;
-}
-
 .blog {
   background: #f6f6f6;
 }
@@ -718,7 +718,7 @@ input[type="submit"]:focus {
 
 .blog main .wrapper .asideContainer .recentPosts li::before {
   content: "•";
-  padding: 0 12px;
+  padding: 12px;
 }
 
 .blog main .wrapper .blogArticle {
