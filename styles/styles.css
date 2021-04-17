@@ -208,7 +208,7 @@ html {
 }
 
 body {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", serif;
   font-size: 2rem;
   color: #1f1f1f;
   letter-spacing: 0.1rem;
@@ -259,7 +259,7 @@ p {
 }
 
 .menu ul li.willowName {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", serif;
   font-size: 4.2rem;
   font-weight: 400;
   color: #f6f6f6;
@@ -277,7 +277,7 @@ p {
 }
 
 .button {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", serif;
   text-decoration: none;
   color: #1f1f1f;
   font-size: 2rem;
@@ -301,7 +301,7 @@ textarea {
 }
 
 input[type="submit"] {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", serif;
   text-transform: uppercase;
 }
 
@@ -388,7 +388,7 @@ ul li {
 }
 
 .menu ul a:hover, .menu ul a:focus {
-  color: #e4a436;
+  border-bottom: 2px solid #e4a436;
 }
 
 .button,
@@ -448,17 +448,16 @@ input[type="submit"]:focus {
 }
 
 .hero .imageContainer {
-  background-color: #fff;
   min-width: 30%;
+  -webkit-box-shadow: 20px 22px 0px 0px #fff;
+          box-shadow: 20px 22px 0px 0px #fff;
   position: relative;
-  top: 70px;
-  left: 30px;
+  top: 50px;
 }
 
 .hero .imageContainer img {
   position: relative;
-  bottom: 20px;
-  right: 20px;
+  top: 3px;
 }
 
 .whosWillow {
@@ -480,16 +479,8 @@ input[type="submit"]:focus {
           align-items: center;
 }
 
-.aboutMore {
-  padding: 20px 0;
-}
-
-.aboutMore .wrapper {
-  max-width: 100%;
-}
-
-.aboutMore .favouriteThings,
-.aboutMore .bucketList {
+.favouriteThings,
+.bucketList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,52 +489,64 @@ input[type="submit"]:focus {
           align-items: center;
 }
 
-.aboutMore .favouriteThings .imageContainer,
-.aboutMore .bucketList .imageContainer {
-  min-width: 50%;
+.favouriteThings .imageContainer,
+.bucketList .imageContainer {
+  width: 50%;
   position: relative;
 }
 
-.aboutMore .favouriteThings .imageContainer img,
-.aboutMore .bucketList .imageContainer img {
-  width: 80%;
+.favouriteThings .imageContainer img,
+.bucketList .imageContainer img {
+  width: 100%;
   position: relative;
 }
 
-.aboutMore .favouriteThings .textContainer,
-.aboutMore .bucketList .textContainer {
+.favouriteThings .textContainer,
+.bucketList .textContainer {
   width: 50%;
 }
 
+.favouriteThings {
+  padding-top: 20px;
+}
+
 .favouriteThings .imageContainer {
-  background: #709b6b;
-  bottom: 40px;
+  -webkit-box-shadow: -300px 20px 0px 0px #709b6b;
+          box-shadow: -300px 20px 0px 0px #709b6b;
+  bottom: 60px;
 }
 
 .favouriteThings .imageContainer img {
-  bottom: 20px;
-  left: 125px;
+  -webkit-box-shadow: 20px 20px 0px 0px #709b6b;
+          box-shadow: 20px 20px 0px 0px #709b6b;
+  top: 4px;
 }
 
 .favouriteThings .textContainer {
-  margin-top: -32px;
-  padding: 0 100px 0 80px;
+  padding-left: 100px;
+  position: relative;
+  bottom: 35px;
+}
+
+.bucketList {
+  padding-bottom: 20px;
+  margin-top: 30px;
 }
 
 .bucketList .imageContainer {
-  background: #345231;
-  top: 60px;
+  -webkit-box-shadow: 300px 19px 0px 0px #345231;
+          box-shadow: 300px 19px 0px 0px #345231;
+  top: 50px;
 }
 
 .bucketList .imageContainer img {
-  bottom: 15px;
-  right: 15px;
+  -webkit-box-shadow: 20px 22px 0px 0px #345231;
+          box-shadow: 20px 22px 0px 0px #345231;
 }
 
 .bucketList .textContainer {
   text-align: right;
-  margin-top: -50px;
-  padding: 0 100px 0 80px;
+  padding-right: 100px;
 }
 
 .willowsJourney {
@@ -788,12 +791,12 @@ form input[type="submit"] {
   display: flex;
 }
 
-.contact main .wrapper aside {
+.contact main .wrapper address {
   background: #fff;
-  height: 30%;
-  padding: 30px;
-  margin: 100px 30px 0 0;
+  height: 100%;
   width: 35%;
+  padding: 50px 30px;
+  margin: 100px 30px 0 0;
 }
 
 .contact main .wrapper form {

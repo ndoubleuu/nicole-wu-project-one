@@ -40,7 +40,7 @@ ul {
       transition: all 0.2s ease;
       &:hover,
       &:focus {
-        color: $accent;
+        border-bottom: 2px solid $accent;
       }
     }
   }
@@ -91,15 +91,13 @@ input[type="submit"] {
     }
   }
   .imageContainer {
-    background-color: $white;
     min-width: 30%;
+    box-shadow: 20px 22px 0px 0px $white;
     position: relative;
-    top: 70px;
-    left: 30px;
+    top: 50px;
     img {
       position: relative;
-      bottom: 20px;
-      right: 20px;
+      top: 3px;
     }
   }
 }
@@ -117,59 +115,55 @@ input[type="submit"] {
 }
 
 // FAVOURITE THINGS, BUCKET LIST (.aboutMore)
-.aboutMore {
-  padding: 20px 0;
-  .wrapper {
-    max-width: 100%;
-  }
-  .favouriteThings,
-  .bucketList {
-    display: flex;
-    align-items: center;
-    .imageContainer {
-      min-width: 50%;
+.favouriteThings,
+.bucketList {
+  display: flex;
+  align-items: center;
+  .imageContainer {
+    width: 50%;
+    position: relative;
+    img {
+      width: 100%;
       position: relative;
-      img {
-        width: 80%;
-        position: relative;
-      }
     }
-    .textContainer {
-      width: 50%;
-    }
+  }
+  .textContainer {
+    width: 50%;
   }
 }
 
 // (Favourite Things)
 .favouriteThings {
+  padding-top: 20px;
   .imageContainer {
-    background: $greenGrey;
-    bottom: 40px;
+    box-shadow: -300px 20px 0px 0px $greenGrey;
+    bottom: 60px;
     img {
-      bottom: 20px;
-      left: 125px;
+      box-shadow: 20px 20px 0px 0px $greenGrey;
+      top: 4px;
     }
   }
   .textContainer {
-    margin-top: -32px;
-    padding: 0 100px 0 80px;
+    padding-left: 100px;
+    position: relative;
+    bottom: 35px;
   }
 }
 
 // (Bucket List)
 .bucketList {
+  padding-bottom: 20px;
+  margin-top: 30px;
   .imageContainer {
-    background: $pine;
-    top: 60px;
+    box-shadow: 300px 19px 0px 0px $pine;
+    top: 50px;
     img {
-      bottom: 15px;
-      right: 15px;
+      box-shadow: 20px 22px 0px 0px $pine;
     }
   }
   .textContainer {
     text-align: right;
-    margin-top: -50px;
-    padding: 0 100px 0 80px;
+    padding-right: 100px;
   }
 }
 
@@ -375,12 +369,12 @@ form {
 // MAIN
 .contact main .wrapper {
   display: flex;
-  aside {
+  address {
     background: $white;
-    height: 30%;
-    padding: 30px;
-    margin: 100px 30px 0 0;
+    height: 100%;
     width: 35%;
+    padding: 50px 30px;
+    margin: 100px 30px 0 0;
   }
   form {
     width: 65%;
