@@ -337,6 +337,14 @@ article h2 {
   text-decoration: underline;
 }
 
+address {
+  font-style: normal;
+}
+
+address .contactEmail {
+  font-weight: 700;
+}
+
 .social i {
   font-size: 3rem;
 }
@@ -403,7 +411,7 @@ input[type="submit"] {
 .button:hover, .button:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background: #fde4b8;
+  background: #f0cd90;
   cursor: pointer;
 }
 
@@ -685,7 +693,7 @@ input[type="submit"]:focus {
 }
 
 .asideContainer {
-  min-width: 30%;
+  min-width: 32%;
   margin-right: 30px;
 }
 
@@ -799,6 +807,14 @@ form input[type="submit"] {
   margin: 100px 30px 0 0;
 }
 
+.contact main .wrapper address .contactEmail {
+  padding: 20px 0;
+}
+
+.contact main .wrapper address p {
+  margin: 0;
+}
+
 .contact main .wrapper form {
   width: 65%;
   margin: 100px 0;
@@ -811,7 +827,8 @@ form input[type="submit"] {
 }
 
 .social li a {
-  padding-right: 40px;
+  padding-right: 20px;
+  margin: 0 20px 0 0;
   color: #345231;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -819,17 +836,4 @@ form input[type="submit"] {
 
 .social li a:hover, .social li a:focus {
   color: #e4a436;
-}
-
-address {
-  font-style: normal;
-}
-
-address .contactEmail {
-  font-weight: 700;
-  padding: 20px 0;
-}
-
-address p {
-  margin: 0;
 }

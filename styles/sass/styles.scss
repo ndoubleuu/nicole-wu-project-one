@@ -54,7 +54,7 @@ input[type="submit"] {
   border: none;
   &:hover,
   &:focus {
-    background: $accentLight;
+    background: lighten($accent, 20);
     cursor: pointer;
   }
 }
@@ -284,7 +284,7 @@ input[type="submit"] {
 }
 
 .asideContainer {
-  min-width: 30%;
+  min-width: 32%;
   margin-right: 30px;
   aside {
     display: flex;
@@ -381,6 +381,12 @@ form {
     width: 35%;
     padding: 50px 30px;
     margin: 100px 30px 0 0;
+    .contactEmail {
+      padding: 20px 0;
+    }
+    p {
+      margin: 0;
+    }
   }
   form {
     width: 65%;
@@ -391,23 +397,13 @@ form {
 .social {
   display: flex;
   li a {
-    padding-right: 40px;
+    padding-right: 20px;
+    margin: 0 20px 0 0;
     color: $pine;
     transition: all 0.2s ease;
     &:hover,
     &:focus {
       color: $accent;
     }
-  }
-}
-
-address {
-  font-style: normal;
-  .contactEmail {
-    font-weight: 700;
-    padding: 20px 0;
-  }
-  p {
-    margin: 0;
   }
 }

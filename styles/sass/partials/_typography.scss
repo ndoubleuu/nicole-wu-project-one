@@ -133,6 +133,13 @@ article h2 {
 }
 
 // CONTACT
+address {
+  font-style: normal;
+  .contactEmail {
+    font-weight: 700;
+  }
+}
+
 .social i {
   font-size: 3rem;
 }
