@@ -12,7 +12,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 1440px;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 img {
@@ -159,14 +159,13 @@ input[type="submit"] {
   .textContainer {
     padding-left: 100px;
     position: relative;
-    bottom: 40px;
+    bottom: 12px;
   }
 }
 
 // (Bucket List)
 .bucketList {
   padding-bottom: 20px;
-  margin-top: 30px;
   .imageContainer {
     box-shadow: 300px 19px 0px 0px $pine;
     top: 50px;
@@ -177,6 +176,8 @@ input[type="submit"] {
   .textContainer {
     text-align: right;
     padding-right: 100px;
+    position: relative;
+    bottom: 40px;
   }
 }
 
@@ -191,20 +192,17 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
   .imageContainer {
-    min-width: 20%;
-    background: $greenGrey;
-    position: relative;
-    top: 30px;
-    left: 15px;
+    box-shadow: 20px 22px 0px 0px $greenGrey;
     img {
       position: relative;
-      bottom: 15px;
-      right: 15px;
+      top: 4px;
     }
   }
   .textContainer {
     width: 80%;
     padding-left: 100px;
+    position: relative;
+    bottom: 10px;
   }
 }
 
@@ -279,13 +277,13 @@ input[type="submit"] {
   aside,
   article {
     background: $white;
-    padding: 30px;
+    padding: 40px;
   }
 }
 
 .asideContainer {
-  min-width: 32%;
-  margin-right: 30px;
+  min-width: 30%;
+  margin-right: 40px;
   aside {
     display: flex;
     flex-direction: column;
@@ -297,7 +295,7 @@ input[type="submit"] {
     }
   }
   .recentPosts {
-    margin-top: 30px;
+    margin-top: 20px;
     h2 {
       padding: 0;
       margin-top: 0;
@@ -389,7 +387,7 @@ form {
     }
   }
   form {
-    width: 65%;
+    width: 80%;
     margin: 100px 0;
   }
 }

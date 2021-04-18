@@ -356,7 +356,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 1440px;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 img {
@@ -547,12 +547,11 @@ input[type="submit"]:focus {
 .favouriteThings .textContainer {
   padding-left: 100px;
   position: relative;
-  bottom: 40px;
+  bottom: 12px;
 }
 
 .bucketList {
   padding-bottom: 20px;
-  margin-top: 30px;
 }
 
 .bucketList .imageContainer {
@@ -569,6 +568,8 @@ input[type="submit"]:focus {
 .bucketList .textContainer {
   text-align: right;
   padding-right: 100px;
+  position: relative;
+  bottom: 40px;
 }
 
 .willowsJourney {
@@ -589,22 +590,20 @@ input[type="submit"]:focus {
 }
 
 .willowsJourney .wrapper .imageContainer {
-  min-width: 20%;
-  background: #709b6b;
-  position: relative;
-  top: 30px;
-  left: 15px;
+  -webkit-box-shadow: 20px 22px 0px 0px #709b6b;
+          box-shadow: 20px 22px 0px 0px #709b6b;
 }
 
 .willowsJourney .wrapper .imageContainer img {
   position: relative;
-  bottom: 15px;
-  right: 15px;
+  top: 4px;
 }
 
 .willowsJourney .wrapper .textContainer {
   width: 80%;
   padding-left: 100px;
+  position: relative;
+  bottom: 10px;
 }
 
 .landscapeImage .wrapper {
@@ -689,12 +688,12 @@ input[type="submit"]:focus {
 .blog main .wrapper aside,
 .blog main .wrapper article {
   background: #fff;
-  padding: 30px;
+  padding: 40px;
 }
 
 .asideContainer {
-  min-width: 32%;
-  margin-right: 30px;
+  min-width: 30%;
+  margin-right: 40px;
 }
 
 .asideContainer aside {
@@ -716,7 +715,7 @@ input[type="submit"]:focus {
 }
 
 .asideContainer .recentPosts {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .asideContainer .recentPosts h2 {
@@ -816,7 +815,7 @@ form input[type="submit"] {
 }
 
 .contact main .wrapper form {
-  width: 65%;
+  width: 80%;
   margin: 100px 0;
 }
 
