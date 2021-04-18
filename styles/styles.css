@@ -227,10 +227,6 @@ h1 {
   color: #f6f6f6;
 }
 
-.hero h1 {
-  font-size: 12.5rem;
-}
-
 h2 {
   font-size: 4.2rem;
 }
@@ -335,6 +331,10 @@ article h2 {
 
 .findOutMore:hover, .findOutMore:focus {
   text-decoration: underline;
+}
+
+.hero h1 {
+  font-size: 16rem;
 }
 
 address {
@@ -460,13 +460,14 @@ input[type="submit"]:focus {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  left: 20px;
   padding-right: 30px;
 }
 
 .hero .titleContainer img {
   position: absolute;
-  left: -60px;
-  top: 60px;
+  left: -55px;
+  top: 100px;
 }
 
 .hero .imageContainer {
@@ -475,11 +476,12 @@ input[type="submit"]:focus {
           box-shadow: 20px 22px 0px 0px #fff;
   position: relative;
   top: 50px;
+  left: 20px;
 }
 
 .hero .imageContainer img {
   position: relative;
-  top: 3px;
+  top: 4px;
 }
 
 .whosWillow {

@@ -22,10 +22,6 @@ h1 {
   color: $whiteShade;
 }
 
-.hero h1 {
-  font-size: 12.5rem;
-}
-
 h2 {
   font-size: 4.2rem;
 }
@@ -130,6 +126,11 @@ article h2 {
   &:focus {
     text-decoration: underline;
   }
+}
+
+// HOME
+.hero h1 {
+  font-size: 16rem;
 }
 
 // CONTACT
