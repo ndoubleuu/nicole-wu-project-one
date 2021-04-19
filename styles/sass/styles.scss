@@ -46,6 +46,25 @@ ul {
   }
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .dropdown {
+  top: 0px;
+}
+
+label[for="toggle"] {
+  position: absolute;
+  right: 10px;
+  padding: 30px;
+  visibility: hidden;
+}
+
+label[for="toggle"]:hover {
+  cursor: pointer;
+}
+
 .button,
 input[type="submit"] {
   background: $accent;
@@ -105,7 +124,6 @@ input[type="submit"] {
     }
   }
   .imageContainer {
-    min-width: 30%;
     box-shadow: 20px 22px 0px 0px $white;
     position: relative;
     top: 50px;
@@ -195,10 +213,6 @@ input[type="submit"] {
   justify-content: center;
   .imageContainer {
     box-shadow: 20px 22px 0px 0px $greenGrey;
-    img {
-      position: relative;
-      top: 4px;
-    }
   }
   .textContainer {
     width: 80%;
@@ -206,6 +220,11 @@ input[type="submit"] {
     position: relative;
     bottom: 10px;
   }
+}
+
+.willowsJourney img {
+  position: relative;
+  top: 4px;
 }
 
 // LANDSCAPE IMAGE
@@ -228,23 +247,20 @@ input[type="submit"] {
 // FOOTER
 .home footer {
   background: $whiteShade;
-}
-
-.home footer .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 0;
-  section {
-    width: 50%;
-    .footerTitles {
-      display: flex;
-      align-items: center;
-    }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
   }
 }
 
-.home footer {
-  section p {
+footer section {
+  width: 50%;
+  .footerTitles {
+    display: flex;
+    align-items: center;
+  }
+  p {
     margin-left: 63px;
   }
   i {
@@ -272,10 +288,11 @@ input[type="submit"] {
 .blog main .wrapper {
   display: flex;
   justify-content: center;
-  .asideContainer,
-  .articleContainer {
-    padding: 100px 0;
-  }
+}
+
+.asideContainer,
+.articleContainer {
+  padding: 100px 0;
   aside,
   article {
     background: $white;
@@ -375,35 +392,123 @@ form {
 // MAIN
 .contact main .wrapper {
   display: flex;
-  address {
-    background: $white;
-    height: 100%;
-    width: 35%;
-    padding: 50px 30px;
-    margin: 100px 30px 0 0;
-    .contactEmail {
-      padding: 20px 0;
-    }
-    p {
-      margin: 0;
-    }
+}
+
+address {
+  background: $white;
+  height: 100%;
+  width: 35%;
+  padding: 50px 30px;
+  margin: 100px 30px 0 0;
+  .contactEmail {
+    padding: 20px 0;
   }
-  form {
-    width: 80%;
-    margin: 100px 0;
+  p {
+    margin: 0;
   }
+}
+.contact form {
+  width: 80%;
+  margin: 100px 0;
 }
 
 .social {
   display: flex;
-  li a {
-    padding-right: 20px;
-    margin: 0 20px 0 0;
+  margin-left: -15px;
+  a {
+    padding: 15px;
+    margin: 0 10px 0 0;
     color: $pine;
     transition: all 0.2s ease;
     &:hover,
     &:focus {
       color: $accent;
+    }
+  }
+}
+
+// ******************************
+
+// MEDIA QUERIES
+@media (max-width: 1280px) {
+  .hero h1 {
+    font-size: 12.5rem;
+  }
+  .hero .titleContainer img {
+    top: 60px;
+  }
+  .hero .imageContainer {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+  .hero h1 {
+    font-size: 10rem;
+  }
+  .hero .titleContainer img {
+    width: 20%;
+    left: -40px;
+    top: 55px;
+  }
+  .hero .imageContainer {
+    left: 10px;
+    top: 10px;
+  }
+  .whosWillow {
+    padding-bottom: 120px;
+  }
+  .favouriteThings .imageContainer {
+    bottom: 35px;
+  }
+  .bucketList .imageContainer {
+    top: 0;
+  }
+  .willowsJourney {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 780px) {
+  label[for="toggle"] {
+    visibility: visible;
+    z-index: 20;
+  }
+  .menu .dropdown {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0;
+    background: #1f1f1ffd;
+    position: absolute;
+    right: 0;
+    top: -770px;
+    z-index: 10;
+    .willowName {
+      display: none;
+    }
+    li {
+      padding: 20px;
+    }
+  }
+  .hero {
+    flex-direction: column;
+    padding-top: 50px;
+    .titleContainer {
+      top: 50px;
+    }
+    .titleContainer img {
+      top: -10px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    .imageContainer {
+      width: 50%;
+      top: 10px;
     }
   }
 }

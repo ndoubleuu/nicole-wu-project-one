@@ -64,6 +64,16 @@ p {
   }
 }
 
+label[for="toggle"] {
+  font-size: 4.5rem;
+  color: $whiteShade;
+  transition: all 0.2s ease;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
 .button {
   font-family: $secondFont;
   text-decoration: none;
