@@ -47,7 +47,8 @@ ul {
 }
 
 input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 input[type="checkbox"]:checked + .dropdown {
