@@ -394,11 +394,11 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0;
+  padding: 3rem 0;
 }
 
 .menu ul li {
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 .menu ul a {
@@ -407,7 +407,7 @@ ul li {
 }
 
 .menu ul a:hover, .menu ul a:focus {
-  border-bottom: 2px solid #e4a436;
+  border-bottom: 0.2rem solid #e4a436;
 }
 
 input[type="checkbox"] {
@@ -415,13 +415,13 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .dropdown {
-  top: 0px;
+  top: 0;
 }
 
 label[for="toggle"] {
   position: absolute;
-  right: 10px;
-  padding: 30px;
+  right: 1rem;
+  padding: 3rem;
   visibility: hidden;
 }
 
@@ -432,7 +432,7 @@ label[for="toggle"]:hover {
 .button,
 input[type="submit"] {
   background: #e4a436;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border: none;
@@ -448,13 +448,13 @@ input[type="submit"]:focus {
 .copyright {
   background: #1f1f1f;
   margin: 0;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 .blog header,
 .contact header {
   background-size: cover;
-  height: 400px;
+  height: 40rem;
   position: relative;
 }
 
@@ -462,11 +462,11 @@ input[type="submit"]:focus {
 .contact header h1 {
   margin: 0;
   position: absolute;
-  top: 325px;
+  top: 32.5rem;
 }
 
 .home p {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .home header {
@@ -490,33 +490,33 @@ input[type="submit"]:focus {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  left: 20px;
-  padding-right: 30px;
+  left: 2rem;
+  padding-right: 3rem;
 }
 
 .hero .titleContainer img {
   position: absolute;
-  left: -55px;
-  top: 100px;
+  left: -5.5rem;
+  top: 10rem;
 }
 
 .hero .imageContainer {
-  -webkit-box-shadow: 20px 22px 0px 0px #fff;
-          box-shadow: 20px 22px 0px 0px #fff;
+  -webkit-box-shadow: 2rem 2.2rem 0 0 #fff;
+          box-shadow: 2rem 2.2rem 0 0 #fff;
   position: relative;
-  top: 50px;
-  left: 20px;
+  top: 5rem;
+  left: 2rem;
 }
 
 .hero .imageContainer img {
   position: relative;
-  top: 4px;
+  top: 0.4rem;
 }
 
 .whosWillow {
   background: #f6f6f6;
   text-align: center;
-  padding: 70px 0 160px;
+  padding: 7rem 0 16rem;
 }
 
 .whosWillow .wrapper {
@@ -560,52 +560,52 @@ input[type="submit"]:focus {
 }
 
 .favouriteThings {
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 .favouriteThings .imageContainer {
-  -webkit-box-shadow: -300px 20px 0px 0px #709b6b;
-          box-shadow: -300px 20px 0px 0px #709b6b;
+  -webkit-box-shadow: -30rem 2rem 0 0 #709b6b;
+          box-shadow: -30rem 2rem 0 0 #709b6b;
   bottom: 80px;
 }
 
 .favouriteThings .imageContainer img {
-  -webkit-box-shadow: 20px 20px 0px 0px #709b6b;
-          box-shadow: 20px 20px 0px 0px #709b6b;
-  top: 4px;
+  -webkit-box-shadow: 2rem 2rem 0 0 #709b6b;
+          box-shadow: 2rem 2rem 0 0 #709b6b;
+  top: 0.4rem;
 }
 
 .favouriteThings .textContainer {
-  padding-left: 100px;
+  padding-left: 10rem;
   position: relative;
-  bottom: 12px;
+  bottom: 1.2rem;
 }
 
 .bucketList {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .bucketList .imageContainer {
-  -webkit-box-shadow: 300px 19px 0px 0px #345231;
-          box-shadow: 300px 19px 0px 0px #345231;
-  top: 50px;
+  -webkit-box-shadow: 30rem 1.9rem 0 0 #345231;
+          box-shadow: 30rem 1.9rem 0 0 #345231;
+  top: 5rem;
 }
 
 .bucketList .imageContainer img {
-  -webkit-box-shadow: 20px 22px 0px 0px #345231;
-          box-shadow: 20px 22px 0px 0px #345231;
+  -webkit-box-shadow: 2rem 2.2rem 0 0 #345231;
+          box-shadow: 2rem 2.2rem 0 0 #345231;
 }
 
 .bucketList .textContainer {
   text-align: right;
-  padding-right: 100px;
+  padding-right: 10rem;
   position: relative;
-  bottom: 40px;
+  bottom: 4rem;
 }
 
 .willowsJourney {
   background: #f6f6f6;
-  padding: 80px 0;
+  padding: 8rem 0;
 }
 
 .willowsJourney .wrapper {
@@ -621,20 +621,20 @@ input[type="submit"]:focus {
 }
 
 .willowsJourney .wrapper .imageContainer {
-  -webkit-box-shadow: 20px 22px 0px 0px #709b6b;
-          box-shadow: 20px 22px 0px 0px #709b6b;
+  -webkit-box-shadow: 2rem 2.2rem 0 0 #709b6b;
+          box-shadow: 2rem 2.2rem 0 0 #709b6b;
 }
 
 .willowsJourney .wrapper .textContainer {
   width: 80%;
-  padding-left: 100px;
+  padding-left: 10rem;
   position: relative;
-  bottom: 10px;
+  bottom: 1.2rem;
 }
 
 .willowsJourney img {
   position: relative;
-  top: 4px;
+  top: 0.4rem;
 }
 
 .landscapeImage .wrapper {
@@ -651,11 +651,11 @@ input[type="submit"]:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 
 .gallery li:nth-of-type(2) {
-  margin: 0 30px;
+  margin: 0 3rem;
 }
 
 .home footer {
@@ -668,7 +668,7 @@ input[type="submit"]:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 5rem 0;
 }
 
 footer section {
@@ -685,12 +685,12 @@ footer section .footerTitles {
 }
 
 footer section p {
-  margin-left: 63px;
+  margin-left: 6.3rem;
 }
 
 footer section i {
   background: #e4a436;
-  padding: 12px;
+  padding: 1.2rem;
   border-radius: 50%;
 }
 
@@ -713,7 +713,7 @@ footer section i {
 
 .asideContainer,
 .articleContainer {
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 
 .asideContainer aside,
@@ -721,12 +721,12 @@ footer section i {
 .articleContainer aside,
 .articleContainer article {
   background: #fff;
-  padding: 40px;
+  padding: 4rem;
 }
 
 .asideContainer {
   min-width: 30%;
-  margin-right: 40px;
+  margin-right: 4rem;
 }
 
 .asideContainer aside {
@@ -740,7 +740,7 @@ footer section i {
 }
 
 .asideContainer aside h2 {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 .asideContainer aside p {
@@ -748,7 +748,7 @@ footer section i {
 }
 
 .asideContainer .recentPosts {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .asideContainer .recentPosts h2 {
@@ -758,24 +758,24 @@ footer section i {
 
 .asideContainer .recentPosts li::before {
   content: "•";
-  padding: 12px;
+  padding: 1.2rem;
 }
 
 .blogArticle {
-  margin-bottom: 40px;
-  border-bottom: 5px solid #709b6b;
+  margin-bottom: 4rem;
+  border-bottom: 0.5rem solid #709b6b;
 }
 
 .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 .comment .imageContainer {
   min-width: 20%;
-  padding-right: 20px;
+  padding-right: 2rem;
 }
 
 .comment .textContainer h3 {
@@ -787,34 +787,34 @@ footer section i {
 }
 
 .comment2 {
-  border-bottom: 5px solid #709b6b;
+  border-bottom: 0.5rem solid #709b6b;
 }
 
 form {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 form input {
-  width: calc((100% / 2) - 7.3px);
+  width: calc((100% / 2) - 0.73rem);
   border: none;
-  padding: 20px 30px;
+  padding: 2rem 3rem;
 }
 
 form input[type="text"] {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 form textarea {
   resize: none;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 2rem;
   border: none;
-  padding: 40px 30px;
+  padding: 4rem 3rem;
 }
 
 form input[type="submit"] {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .contact {
@@ -835,12 +835,12 @@ address {
   background: #fff;
   height: 100%;
   width: 35%;
-  padding: 50px 30px;
-  margin: 100px 30px 0 0;
+  padding: 5rem 3rem;
+  margin: 10rem 3rem 0 0;
 }
 
 address .contactEmail {
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 address p {
@@ -849,19 +849,19 @@ address p {
 
 .contact form {
   width: 80%;
-  margin: 100px 0;
+  margin: 10rem 0;
 }
 
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -15px;
+  margin-left: -1.5rem;
 }
 
 .social a {
-  padding: 15px;
-  margin: 0 10px 0 0;
+  padding: 1.5rem;
+  margin: 0 1rem 0 0;
   color: #345231;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -876,7 +876,7 @@ address p {
     font-size: 12.5rem;
   }
   .hero .titleContainer img {
-    top: 60px;
+    top: 6rem;
   }
   .hero .imageContainer {
     width: 30%;
@@ -885,31 +885,31 @@ address p {
 
 @media (max-width: 1000px) {
   .hero {
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
   }
   .hero h1 {
     font-size: 10rem;
   }
   .hero .titleContainer img {
     width: 20%;
-    left: -40px;
-    top: 55px;
+    left: -4rem;
+    top: 5.5rem;
   }
   .hero .imageContainer {
-    left: 10px;
-    top: 10px;
+    left: 1rem;
+    top: 1rem;
   }
   .whosWillow {
-    padding-bottom: 120px;
+    padding-bottom: 12rem;
   }
   .favouriteThings .imageContainer {
-    bottom: 35px;
+    bottom: 3.5rem;
   }
   .bucketList .imageContainer {
     top: 0;
   }
   .willowsJourney {
-    padding-top: 50px;
+    padding-top: 5rem;
   }
 }
 
@@ -927,37 +927,128 @@ address p {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding: 60px 0;
+    padding: 6rem 0;
     background: #1f1f1ffd;
     position: absolute;
     right: 0;
-    top: -770px;
+    top: -77rem;
     z-index: 10;
   }
   .menu .dropdown .willowName {
     display: none;
   }
   .menu .dropdown li {
-    padding: 20px;
+    padding: 2rem;
   }
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 50px;
+    padding-top: 5rem;
   }
   .hero .titleContainer {
-    top: 50px;
+    top: 5rem;
+    left: 3.5rem;
   }
   .hero .titleContainer img {
-    top: -10px;
+    top: -1rem;
   }
   .hero h1 {
     margin-top: 0;
   }
   .hero .imageContainer {
     width: 50%;
-    top: 10px;
+    left: 0;
+    top: 2rem;
+  }
+  .aboutMore {
+    padding-top: 50px;
+  }
+  .aboutMore .favouriteThings .imageContainer,
+  .aboutMore .bucketList .imageContainer {
+    width: 100%;
+  }
+  .favouriteThings .textContainer,
+  .bucketList .textContainer {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .favouriteThings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .favouriteThings .imageContainer {
+    -webkit-box-shadow: -25rem 2rem 0 0 #709b6b;
+            box-shadow: -25rem 2rem 0 0 #709b6b;
+  }
+  .bucketList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 5rem;
+  }
+  .bucketList .textContainer {
+    padding-top: 7.5rem;
+  }
+  .willowsJourney .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .willowsJourney .wrapper .textContainer {
+    width: 100%;
+    padding: 5rem 0 0 0;
+    text-align: center;
+  }
+  .gallery .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem 0;
+  }
+  .gallery .wrapper li {
+    padding: 2rem 0;
+  }
+  .gallery .wrapper li:nth-of-type(2) {
+    margin: 0;
+  }
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero h1 {
+    font-size: 8rem;
+  }
+  .hero .titleContainer img {
+    top: -1.5rem;
+    left: -3rem;
+    width: 25%;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero h1 {
+    font-size: 6rem;
+  }
+  .hero .titleContainer {
+    left: 3rem;
+  }
+  .hero .imageContainer {
+    top: 2.5rem;
   }
 }
