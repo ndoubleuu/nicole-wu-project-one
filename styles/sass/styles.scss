@@ -172,7 +172,7 @@ input[type="submit"] {
   padding-top: 2rem;
   .imageContainer {
     box-shadow: -30rem 2rem 0 0 $greenGrey;
-    bottom: 80px;
+    bottom: 8rem;
     img {
       box-shadow: 2rem 2rem 0 0 $greenGrey;
       top: 0.4rem;
@@ -442,6 +442,10 @@ address {
   .hero .imageContainer {
     flex-basis: 30%;
   }
+  .asideContainer .recentPosts li::before {
+    content: "•";
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -471,6 +475,44 @@ address {
   }
   .willowsJourney {
     padding-top: 5rem;
+  }
+  .blog main .wrapper {
+    flex-direction: column;
+  }
+  .asideContainer {
+    width: 100%;
+    padding: 5rem 0;
+    .aboutWillow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .textContainer {
+        width: 70%;
+      }
+    }
+    .recentPosts {
+      align-items: center;
+    }
+  }
+  .articleContainer {
+    padding: 0 0 5rem 0;
+    h2 {
+      text-align: center;
+    }
+  }
+  .contact main .wrapper {
+    flex-direction: column;
+  }
+  address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    .social a:last-child {
+      margin: 0 10px;
+    }
   }
 }
 
@@ -516,7 +558,7 @@ address {
     }
   }
   .aboutMore {
-    padding-top: 50px;
+    padding-top: 5rem;
     .favouriteThings .imageContainer,
     .bucketList .imageContainer {
       width: 100%;
@@ -562,8 +604,13 @@ address {
   footer .wrapper {
     flex-direction: column;
   }
-  footer section {
-    width: 100%;
+}
+
+@media (max-width: 615px) {
+  .blog header h1,
+  .contact header h1 {
+    width: 80%;
+    top: 23.2rem;
   }
 }
 
@@ -576,6 +623,13 @@ address {
     left: -3rem;
     width: 25%;
   }
+  form input[type="text"],
+  form input[type="email"] {
+    width: 100%;
+  }
+  form input[type="email"] {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -587,5 +641,27 @@ address {
   }
   .hero .imageContainer {
     top: 2.5rem;
+  }
+  .contact header h1,
+  .blog header h1 {
+    font-size: 6rem;
+    top: 27.5rem;
+  }
+  article h2 {
+    font-size: 3.2rem;
+    font-size: 2.4rem;
+  }
+  .asideContainer aside,
+  .asideContainer article,
+  .articleContainer aside,
+  .articleContainer article {
+    padding: 2.5rem;
+  }
+  .asideContainer .aboutWillow .textContainer {
+    width: 100%;
+  }
+  .comment .imageContainer {
+    min-width: 25%;
+    padding-right: 2rem;
   }
 }

@@ -571,7 +571,7 @@ input[type="submit"]:focus {
 .favouriteThings .imageContainer {
   -webkit-box-shadow: -30rem 2rem 0 0 #709b6b;
           box-shadow: -30rem 2rem 0 0 #709b6b;
-  bottom: 80px;
+  bottom: 8rem;
 }
 
 .favouriteThings .imageContainer img {
@@ -891,6 +891,10 @@ address p {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
+  .asideContainer .recentPosts li::before {
+    content: "•";
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -920,6 +924,66 @@ address p {
   }
   .willowsJourney {
     padding-top: 5rem;
+  }
+  .blog main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .asideContainer {
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .asideContainer .aboutWillow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .asideContainer .aboutWillow .textContainer {
+    width: 70%;
+  }
+  .asideContainer .recentPosts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .articleContainer {
+    padding: 0 0 5rem 0;
+  }
+  .articleContainer h2 {
+    text-align: center;
+  }
+  .contact main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  address .social a:last-child {
+    margin: 0 10px;
   }
 }
 
@@ -973,7 +1037,7 @@ address p {
     top: 2rem;
   }
   .aboutMore {
-    padding-top: 50px;
+    padding-top: 5rem;
   }
   .aboutMore .favouriteThings .imageContainer,
   .aboutMore .bucketList .imageContainer {
@@ -1037,8 +1101,13 @@ address p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer section {
-    width: 100%;
+}
+
+@media (max-width: 615px) {
+  .blog header h1,
+  .contact header h1 {
+    width: 80%;
+    top: 23.2rem;
   }
 }
 
@@ -1051,6 +1120,13 @@ address p {
     left: -3rem;
     width: 25%;
   }
+  form input[type="text"],
+  form input[type="email"] {
+    width: 100%;
+  }
+  form input[type="email"] {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1062,5 +1138,27 @@ address p {
   }
   .hero .imageContainer {
     top: 2.5rem;
+  }
+  .contact header h1,
+  .blog header h1 {
+    font-size: 6rem;
+    top: 27.5rem;
+  }
+  article h2 {
+    font-size: 3.2rem;
+    font-size: 2.4rem;
+  }
+  .asideContainer aside,
+  .asideContainer article,
+  .articleContainer aside,
+  .articleContainer article {
+    padding: 2.5rem;
+  }
+  .asideContainer .aboutWillow .textContainer {
+    width: 100%;
+  }
+  .comment .imageContainer {
+    min-width: 25%;
+    padding-right: 2rem;
   }
 }
