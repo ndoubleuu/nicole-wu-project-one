@@ -395,6 +395,8 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 3rem 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .menu ul li {
@@ -545,7 +547,8 @@ input[type="submit"]:focus {
 
 .favouriteThings .imageContainer,
 .bucketList .imageContainer {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   position: relative;
 }
 
@@ -557,7 +560,8 @@ input[type="submit"]:focus {
 
 .favouriteThings .textContainer,
 .bucketList .textContainer {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .favouriteThings {
@@ -627,7 +631,8 @@ input[type="submit"]:focus {
 }
 
 .willowsJourney .wrapper .textContainer {
-  width: 80%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   padding-left: 10rem;
   position: relative;
   bottom: 1.2rem;
@@ -673,7 +678,8 @@ input[type="submit"]:focus {
 }
 
 footer section {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 footer section .footerTitles {
@@ -835,7 +841,8 @@ form input[type="submit"] {
 address {
   background: #fff;
   height: 100%;
-  width: 35%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   padding: 5rem 3rem;
   margin: 10rem 3rem 0 0;
 }
@@ -849,7 +856,8 @@ address p {
 }
 
 .contact form {
-  width: 80%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   margin: 10rem 0;
 }
 
@@ -880,7 +888,8 @@ address p {
     top: 6rem;
   }
   .hero .imageContainer {
-    width: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }
 
@@ -972,7 +981,8 @@ address p {
   }
   .favouriteThings .textContainer,
   .bucketList .textContainer {
-    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     text-align: center;
     padding: 0;
   }
@@ -994,7 +1004,7 @@ address p {
     padding-top: 5rem;
   }
   .bucketList .textContainer {
-    padding-top: 7.5rem;
+    padding-top: 7rem;
   }
   .willowsJourney .wrapper {
     -webkit-box-orient: vertical;
@@ -1003,7 +1013,8 @@ address p {
             flex-direction: column;
   }
   .willowsJourney .wrapper .textContainer {
-    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     padding: 5rem 0 0 0;
     text-align: center;
   }

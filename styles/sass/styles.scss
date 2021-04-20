@@ -33,6 +33,7 @@ ul {
     display: flex;
     justify-content: center;
     padding: 3rem 0;
+    transition: all 1s ease;
     li {
       padding: 0 2rem;
     }
@@ -154,7 +155,7 @@ input[type="submit"] {
   display: flex;
   align-items: center;
   .imageContainer {
-    width: 50%;
+    flex-basis: 50%;
     position: relative;
     img {
       width: 100%;
@@ -162,7 +163,7 @@ input[type="submit"] {
     }
   }
   .textContainer {
-    width: 50%;
+    flex-basis: 50%;
   }
 }
 
@@ -216,7 +217,7 @@ input[type="submit"] {
     box-shadow: 2rem 2.2rem 0 0 $greenGrey;
   }
   .textContainer {
-    width: 80%;
+    flex-basis: 80%;
     padding-left: 10rem;
     position: relative;
     bottom: 1.2rem;
@@ -256,7 +257,7 @@ input[type="submit"] {
 }
 
 footer section {
-  width: 50%;
+  flex-basis: 50%;
   .footerTitles {
     display: flex;
     align-items: center;
@@ -398,7 +399,7 @@ form {
 address {
   background: $white;
   height: 100%;
-  width: 35%;
+  flex-basis: 35%;
   padding: 5rem 3rem;
   margin: 10rem 3rem 0 0;
   .contactEmail {
@@ -409,7 +410,7 @@ address {
   }
 }
 .contact form {
-  width: 80%;
+  flex-basis: 80%;
   margin: 10rem 0;
 }
 
@@ -439,7 +440,7 @@ address {
     top: 6rem;
   }
   .hero .imageContainer {
-    width: 30%;
+    flex-basis: 30%;
   }
 }
 
@@ -523,7 +524,7 @@ address {
   }
   .favouriteThings .textContainer,
   .bucketList .textContainer {
-    width: 100%;
+    flex-basis: 100%;
     text-align: center;
     padding: 0;
   }
@@ -537,13 +538,13 @@ address {
     flex-direction: column-reverse;
     padding-top: 5rem;
     .textContainer {
-      padding-top: 7.5rem;
+      padding-top: 7rem;
     }
   }
   .willowsJourney .wrapper {
     flex-direction: column;
     .textContainer {
-      width: 100%;
+      flex-basis: 100%;
       padding: 5rem 0 0 0;
       text-align: center;
     }
