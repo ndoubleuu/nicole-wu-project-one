@@ -1,0 +1,48 @@
+// ** CONTACT ME **
+
+.contact {
+  background: $whiteShade;
+}
+
+// HEADER
+.contact header {
+  background-image: url("../assets/contact-image-1.jpg");
+}
+
+// MAIN
+.contact main .wrapper {
+  display: flex;
+}
+
+address {
+  background: $white;
+  height: 100%;
+  flex-basis: 35%;
+  padding: 5rem 3rem;
+  margin: 10rem 3rem 0 0;
+  .contactEmail {
+    padding: 2rem 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+.contact form {
+  flex-basis: 80%;
+  margin: 10rem 0;
+}
+
+.social {
+  display: flex;
+  margin-left: -1.5rem;
+  a {
+    padding: 1.5rem;
+    margin: 0 1rem 0 0;
+    color: $pine;
+    transition: all 0.2s ease;
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+}

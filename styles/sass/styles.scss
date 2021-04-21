@@ -3,104 +3,11 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/typography";
-
-//General styles for all pages
-body {
-  overflow-x: hidden;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 1440px;
-  max-width: 90%;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  li {
-    list-style: none;
-  }
-}
-
-.menu {
-  background: $pine;
-  ul {
-    display: flex;
-    justify-content: center;
-    padding: 3rem 0;
-    transition: all 1s ease;
-    li {
-      padding: 0 2rem;
-    }
-    a {
-      transition: all 0.2s ease;
-      &:hover,
-      &:focus {
-        border-bottom: 0.2rem solid $accent;
-      }
-    }
-  }
-}
-
-input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-}
-
-input[type="checkbox"]:checked + .dropdown {
-  top: 0;
-}
-
-label[for="toggle"] {
-  position: absolute;
-  right: 1rem;
-  padding: 3rem;
-  visibility: hidden;
-}
-
-label[for="toggle"]:hover {
-  cursor: pointer;
-}
-
-.button,
-input[type="submit"] {
-  background: $accent;
-  padding: 1rem 2rem;
-  transition: all 0.2s ease;
-  border: none;
-  &:hover,
-  &:focus {
-    background: lighten($accent, 20);
-    cursor: pointer;
-  }
-}
-
-.copyright {
-  background: $black;
-  margin: 0;
-  padding: 1rem 0;
-}
-
-// General styles for Blog + Contact
-.blog header,
-.contact header {
-  background-size: cover;
-  height: 40rem;
-  position: relative;
-  h1 {
-    margin: 0;
-    position: absolute;
-    top: 32.5rem;
-  }
-}
+@import "partials/generalStyles";
+@import "partials/blogStyles";
+@import "partials/contactStyles";
 
 // ** HOME **
-
 .home p {
   padding-bottom: 2rem;
 }
@@ -111,9 +18,7 @@ input[type="submit"] {
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexBox(center, center);
   .titleContainer {
     display: flex;
     position: relative;
@@ -143,17 +48,14 @@ input[type="submit"] {
   text-align: center;
   padding: 7rem 0 16rem;
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexBox(center, center, column);
   }
 }
 
 // FAVOURITE THINGS, BUCKET LIST (.aboutMore)
 .favouriteThings,
 .bucketList {
-  display: flex;
-  align-items: center;
+  @include flexBox(center, center);
   .imageContainer {
     flex-basis: 50%;
     position: relative;
@@ -210,9 +112,7 @@ input[type="submit"] {
 }
 
 .willowsJourney .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexBox(center, center);
   .imageContainer {
     box-shadow: 2rem 2.2rem 0 0 $greenGrey;
   }
@@ -236,9 +136,7 @@ input[type="submit"] {
 
 // GALLERY
 .gallery .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexBox(center, center);
   padding: 10rem 0;
 }
 
@@ -259,8 +157,7 @@ input[type="submit"] {
 footer section {
   flex-basis: 50%;
   .footerTitles {
-    display: flex;
-    align-items: center;
+    @include flexBox(undefined, center);
   }
   p {
     margin-left: 6.3rem;
@@ -269,163 +166,6 @@ footer section {
     background: $accent;
     padding: 1.2rem;
     border-radius: 50%;
-  }
-}
-
-// *******************************
-
-// ** BLOG & NEWS **
-
-// GENERAL
-.blog {
-  background: $whiteShade;
-}
-
-// HEADER
-.blog header {
-  background-image: url("../assets/blog-image-1.jpg");
-}
-
-// MAIN
-.blog main .wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.asideContainer,
-.articleContainer {
-  padding: 10rem 0;
-  aside,
-  article {
-    background: $white;
-    padding: 4rem;
-  }
-}
-
-.asideContainer {
-  min-width: 30%;
-  margin-right: 4rem;
-  aside {
-    display: flex;
-    flex-direction: column;
-    h2 {
-      padding-top: 1rem;
-    }
-    p {
-      margin: 0;
-    }
-  }
-  .recentPosts {
-    margin-top: 2rem;
-    h2 {
-      padding: 0;
-      margin-top: 0;
-    }
-    li::before {
-      content: "•";
-      padding: 1.2rem;
-    }
-  }
-}
-
-.blogArticle {
-  margin-bottom: 4rem;
-  border-bottom: 0.5rem solid $greenGrey;
-}
-
-.comment {
-  display: flex;
-  margin: 2rem 0;
-  .imageContainer {
-    min-width: 20%;
-    padding-right: 2rem;
-  }
-  .textContainer {
-    h3 {
-      margin: 0;
-    }
-    p {
-      margin: 0;
-    }
-  }
-}
-
-.comment2 {
-  border-bottom: 0.5rem solid $greenGrey;
-}
-
-// FORM
-form {
-  margin-top: 4rem;
-  input {
-    width: calc((100% / 2) - 0.73rem);
-    border: none;
-    padding: 2rem 3rem;
-  }
-  input[type="text"] {
-    margin-right: 1rem;
-  }
-  textarea {
-    resize: none;
-    width: 100%;
-    margin-top: 2rem;
-    border: none;
-    padding: 4rem 3rem;
-  }
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 2rem;
-  }
-}
-
-// *******************************
-
-// ** CONTACT ME **
-
-.contact {
-  background: $whiteShade;
-}
-
-// HEADER
-.contact header {
-  background-image: url("../assets/contact-image-1.jpg");
-}
-
-// MAIN
-.contact main .wrapper {
-  display: flex;
-}
-
-address {
-  background: $white;
-  height: 100%;
-  flex-basis: 35%;
-  padding: 5rem 3rem;
-  margin: 10rem 3rem 0 0;
-  .contactEmail {
-    padding: 2rem 0;
-  }
-  p {
-    margin: 0;
-  }
-}
-.contact form {
-  flex-basis: 80%;
-  margin: 10rem 0;
-}
-
-.social {
-  display: flex;
-  margin-left: -1.5rem;
-  a {
-    padding: 1.5rem;
-    margin: 0 1rem 0 0;
-    color: $pine;
-    transition: all 0.2s ease;
-    &:hover,
-    &:focus {
-      color: $accent;
-    }
   }
 }
 
@@ -443,7 +183,6 @@ address {
     flex-basis: 30%;
   }
   .asideContainer .recentPosts li::before {
-    content: "•";
     padding: 0.5rem;
   }
 }
@@ -483,9 +222,7 @@ address {
     width: 100%;
     padding: 5rem 0;
     .aboutWillow {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flexBox(center, center, column);
       text-align: center;
       .textContainer {
         width: 70%;
@@ -505,14 +242,19 @@ address {
     flex-direction: column;
   }
   address {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexBox(center, center, column);
     width: 100%;
+    margin-top: 5rem;
     text-align: center;
-    .social a:last-child {
-      margin: 0 10px;
+    .social {
+      margin-left: 0;
+      a {
+        margin: 0 1rem;
+      }
     }
+  }
+  .contact form {
+    margin: 5rem 0;
   }
 }
 
@@ -523,7 +265,6 @@ address {
   }
   .menu .dropdown {
     flex-direction: column;
-    align-items: center;
     width: 100%;
     padding: 6rem 0;
     background: #1f1f1ffd;
@@ -553,7 +294,7 @@ address {
     }
     .imageContainer {
       width: 50%;
-      left: 0;
+      left: -1rem;
       top: 2rem;
     }
   }
@@ -607,6 +348,10 @@ address {
 }
 
 @media (max-width: 615px) {
+  .hero .imageContainer {
+    width: 80%;
+    top: 3.2rem;
+  }
   .blog header h1,
   .contact header h1 {
     width: 80%;
@@ -628,7 +373,10 @@ address {
     width: 100%;
   }
   form input[type="email"] {
-    margin-top: 20px;
+    margin-top: 2rem;
+  }
+  .asideContainer .aboutWillow .textContainer {
+    width: 100%;
   }
 }
 
@@ -638,6 +386,7 @@ address {
   }
   .hero .titleContainer {
     left: 3rem;
+    top: 4rem;
   }
   .hero .imageContainer {
     top: 2.5rem;
@@ -656,9 +405,6 @@ address {
   .articleContainer aside,
   .articleContainer article {
     padding: 2.5rem;
-  }
-  .asideContainer .aboutWillow .textContainer {
-    width: 100%;
   }
   .comment .imageContainer {
     min-width: 25%;

@@ -33,7 +33,7 @@ h3 {
 h4 {
   font-size: 2.4rem;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 p {
@@ -141,6 +141,15 @@ article h2 {
 // HOME
 .hero h1 {
   font-size: 16rem;
+}
+
+.footerTitles a {
+  text-decoration: none;
+  color: $black;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 // CONTACT

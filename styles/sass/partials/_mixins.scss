@@ -1,7 +1,6 @@
-// @mixin position($type, $top, $right, $bottom, $left) {
-//   position: $type;
-//   top: $top;
-//   right: $right;
-//   bottom: $bottom;
-//   left: $left;
-// }
+@mixin flexBox($justifyContent, $alignItems, $flexDirection: row) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}

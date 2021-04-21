@@ -1,0 +1,101 @@
+// ** BLOG & NEWS **
+
+// GENERAL
+.blog {
+  background: $whiteShade;
+}
+
+// HEADER
+.blog header {
+  background-image: url("../assets/blog-image-1.jpg");
+}
+
+// MAIN
+.blog main .wrapper {
+  @include flexBox(center, undefined);
+}
+
+.asideContainer,
+.articleContainer {
+  padding: 10rem 0;
+  aside,
+  article {
+    background: $white;
+    padding: 4rem;
+  }
+}
+
+.asideContainer {
+  min-width: 30%;
+  margin-right: 4rem;
+  aside {
+    @include flexBox(center, undefined, column);
+    h2 {
+      padding-top: 1rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .recentPosts {
+    margin-top: 2rem;
+    h2 {
+      padding: 0;
+      margin-top: 0;
+    }
+    li::before {
+      content: "•";
+      padding: 1.2rem;
+    }
+  }
+}
+
+.blogArticle {
+  margin-bottom: 4rem;
+  border-bottom: 0.5rem solid $greenGrey;
+}
+
+.comment {
+  display: flex;
+  margin: 2rem 0;
+  .imageContainer {
+    min-width: 20%;
+    padding-right: 2rem;
+  }
+  .textContainer {
+    h3 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.comment2 {
+  border-bottom: 0.5rem solid $greenGrey;
+}
+
+// FORM
+form {
+  margin-top: 4rem;
+  input {
+    width: calc((100% / 2) - 0.73rem);
+    border: none;
+    padding: 2rem 3rem;
+  }
+  input[type="text"] {
+    margin-right: 1rem;
+  }
+  textarea {
+    resize: none;
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    padding: 4rem 3rem;
+  }
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
