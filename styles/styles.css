@@ -1127,6 +1127,10 @@ footer section i {
     -webkit-box-shadow: -25rem 2rem 0 0 #709b6b;
             box-shadow: -25rem 2rem 0 0 #709b6b;
   }
+  .favouriteThings .imageContainer img {
+    -webkit-box-shadow: -2.5rem 2rem 0 0 #709b6b;
+            box-shadow: -2.5rem 2rem 0 0 #709b6b;
+  }
   .bucketList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1232,5 +1236,8 @@ footer section i {
   .comment .imageContainer {
     min-width: 25%;
     padding-right: 2rem;
+  }
+  footer .copyright {
+    font-size: 1.8rem;
   }
 }

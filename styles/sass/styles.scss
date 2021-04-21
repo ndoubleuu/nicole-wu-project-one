@@ -317,6 +317,9 @@ footer section {
       box-shadow: -25rem 2rem 0 0 $greenGrey;
     }
   }
+  .favouriteThings .imageContainer img {
+    box-shadow: -2.5rem 2rem 0 0 $greenGrey;
+  }
   .bucketList {
     flex-direction: column-reverse;
     padding-top: 5rem;
@@ -409,5 +412,8 @@ footer section {
   .comment .imageContainer {
     min-width: 25%;
     padding-right: 2rem;
+  }
+  footer .copyright {
+    font-size: 1.8rem;
   }
 }
