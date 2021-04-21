@@ -904,7 +904,11 @@ address p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 5rem 0;
+  padding: 5rem 0 3rem 0;
+}
+
+.home footer .copyright {
+  padding-bottom: 1rem;
 }
 
 footer section {
