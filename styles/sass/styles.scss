@@ -24,11 +24,17 @@
     position: relative;
     left: 2rem;
     padding-right: 3rem;
-    img {
-      position: absolute;
-      left: -5.5rem;
-      top: 10rem;
-    }
+  }
+  .titleContainer::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/circle-text.png");
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: -5.5rem;
+    top: 10rem;
   }
   .imageContainer {
     box-shadow: 2rem 2.2rem 0 0 $white;
@@ -136,7 +142,7 @@
 
 // GALLERY
 .gallery .wrapper {
-  @include flexBox(center, center);
+  @include flexBox(space-between, center);
   padding: 10rem 0;
 }
 
@@ -179,7 +185,7 @@ footer section {
   .hero h1 {
     font-size: 12.5rem;
   }
-  .hero .titleContainer img {
+  .hero .titleContainer::before {
     top: 6rem;
   }
   .hero .imageContainer {
@@ -197,10 +203,10 @@ footer section {
   .hero h1 {
     font-size: 10rem;
   }
-  .hero .titleContainer img {
-    width: 20%;
+  .hero .titleContainer::before {
+    background-size: 10rem;
     left: -4rem;
-    top: 5.5rem;
+    top: 5.3rem;
   }
   .hero .imageContainer {
     left: 1rem;
@@ -289,8 +295,8 @@ footer section {
       top: 5rem;
       left: 3.5rem;
     }
-    .titleContainer img {
-      top: -1rem;
+    .titleContainer::before {
+      top: -1.2rem;
     }
     h1 {
       margin-top: 0;
@@ -369,10 +375,9 @@ footer section {
   .hero h1 {
     font-size: 8rem;
   }
-  .hero .titleContainer img {
-    top: -1.5rem;
-    left: -3rem;
-    width: 25%;
+  .hero .titleContainer::before {
+    left: -3.5rem;
+    background-size: 8.5rem;
   }
   form input[type="text"],
   form input[type="email"] {
@@ -393,6 +398,11 @@ footer section {
   .hero .titleContainer {
     left: 3rem;
     top: 4rem;
+  }
+  .hero .titleContainer::before {
+    top: -1.5rem;
+    left: -3rem;
+    background-size: 7.5rem;
   }
   .hero .imageContainer {
     top: 2.5rem;

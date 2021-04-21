@@ -709,7 +709,13 @@ address p {
   padding-right: 3rem;
 }
 
-.hero .titleContainer img {
+.hero .titleContainer::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../assets/circle-text.png");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 180px;
   position: absolute;
   left: -5.5rem;
   top: 10rem;
@@ -877,9 +883,9 @@ address p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -946,7 +952,7 @@ footer section i {
   .hero h1 {
     font-size: 12.5rem;
   }
-  .hero .titleContainer img {
+  .hero .titleContainer::before {
     top: 6rem;
   }
   .hero .imageContainer {
@@ -965,10 +971,10 @@ footer section i {
   .hero h1 {
     font-size: 10rem;
   }
-  .hero .titleContainer img {
-    width: 20%;
+  .hero .titleContainer::before {
+    background-size: 10rem;
     left: -4rem;
-    top: 5.5rem;
+    top: 5.3rem;
   }
   .hero .imageContainer {
     left: 1rem;
@@ -1096,8 +1102,8 @@ footer section i {
     top: 5rem;
     left: 3.5rem;
   }
-  .hero .titleContainer img {
-    top: -1rem;
+  .hero .titleContainer::before {
+    top: -1.2rem;
   }
   .hero h1 {
     margin-top: 0;
@@ -1194,10 +1200,9 @@ footer section i {
   .hero h1 {
     font-size: 8rem;
   }
-  .hero .titleContainer img {
-    top: -1.5rem;
-    left: -3rem;
-    width: 25%;
+  .hero .titleContainer::before {
+    left: -3.5rem;
+    background-size: 8.5rem;
   }
   form input[type="text"],
   form input[type="email"] {
@@ -1218,6 +1223,11 @@ footer section i {
   .hero .titleContainer {
     left: 3rem;
     top: 4rem;
+  }
+  .hero .titleContainer::before {
+    top: -1.5rem;
+    left: -3rem;
+    background-size: 7.5rem;
   }
   .hero .imageContainer {
     top: 2.5rem;
