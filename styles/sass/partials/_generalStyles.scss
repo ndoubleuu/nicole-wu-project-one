@@ -94,6 +94,29 @@ input[type="submit"] {
 }
 
 //Media Queries
+@media (max-width: 780px) {
+  label[for="toggle"] {
+    visibility: visible;
+    z-index: 20;
+  }
+  .menu .dropdown {
+    flex-direction: column;
+    width: 100%;
+    padding: 6rem 0;
+    background: #1f1f1ffd;
+    position: absolute;
+    right: 0;
+    top: -77rem;
+    z-index: 10;
+    .willowName {
+      display: none;
+    }
+    li {
+      padding: 2rem;
+    }
+  }
+}
+
 @media (max-width: 615px) {
   .blog header h1,
   .contact header h1 {
