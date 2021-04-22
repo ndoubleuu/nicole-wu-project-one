@@ -1,3 +1,4 @@
+// Flex box
 @mixin flexBox($justifyContent, $alignItems, $flexDirection: row) {
   display: flex;
   justify-content: $justifyContent;

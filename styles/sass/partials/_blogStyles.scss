@@ -1,6 +1,5 @@
 // ** BLOG & NEWS **
 
-// GENERAL
 .blog {
   background: $whiteShade;
 }
@@ -76,7 +75,7 @@
   border-bottom: 0.5rem solid $greenGrey;
 }
 
-// FORM
+// Form
 form {
   margin-top: 4rem;
   input {
@@ -97,5 +96,60 @@ form {
   input[type="submit"] {
     width: 100%;
     margin-top: 2rem;
+  }
+}
+
+//Media Queries
+@media (max-width: 1280px) {
+  .asideContainer .recentPosts li::before {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .blog main .wrapper {
+    flex-direction: column;
+  }
+  .asideContainer {
+    width: 100%;
+    padding: 5rem 0;
+    .aboutWillow {
+      @include flexBox(center, center, column);
+      text-align: center;
+      .textContainer {
+        width: 70%;
+      }
+    }
+    .recentPosts {
+      align-items: center;
+    }
+  }
+  .articleContainer {
+    padding: 0 0 5rem 0;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .asideContainer .aboutWillow .textContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  article h2 {
+    font-size: 2.4rem;
+  }
+  .asideContainer aside,
+  .asideContainer article,
+  .articleContainer aside,
+  .articleContainer article {
+    padding: 2.5rem;
+  }
+  .comment .imageContainer {
+    min-width: 25%;
+    padding-right: 2rem;
   }
 }

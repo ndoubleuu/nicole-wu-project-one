@@ -1,15 +1,15 @@
-// ** CONTACT ME **
+// ** CONTACT **
 
 .contact {
   background: $whiteShade;
 }
 
-// HEADER
+// Header
 .contact header {
   background-image: url("../assets/contact-image-1.jpg");
 }
 
-// MAIN
+// Main
 .contact main .wrapper {
   display: flex;
 }
@@ -44,5 +44,27 @@ address {
     &:focus {
       color: $accent;
     }
+  }
+}
+
+//Media Queries
+@media (max-width: 1000px) {
+  .contact main .wrapper {
+    flex-direction: column;
+  }
+  address {
+    @include flexBox(center, center, column);
+    margin-top: 5rem;
+    margin-right: 0;
+    text-align: center;
+    .social {
+      margin-left: 0;
+      a {
+        margin: 0 1rem;
+      }
+    }
+  }
+  .contact form {
+    margin: 5rem 0;
   }
 }

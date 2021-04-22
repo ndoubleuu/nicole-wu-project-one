@@ -1,4 +1,5 @@
 //General styles for all pages
+
 body {
   overflow-x: hidden;
 }
@@ -89,5 +90,35 @@ input[type="submit"] {
     margin: 0;
     position: absolute;
     top: 32.5rem;
+  }
+}
+
+//Media Queries
+@media (max-width: 615px) {
+  .blog header h1,
+  .contact header h1 {
+    width: 80%;
+    top: 23.2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  form input[type="text"],
+  form input[type="email"] {
+    width: 100%;
+  }
+  form input[type="email"] {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .copyright {
+    font-size: 1.8rem;
+  }
+  .contact header h1,
+  .blog header h1 {
+    font-size: 6rem;
+    top: 27.5rem;
   }
 }

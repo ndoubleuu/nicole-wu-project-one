@@ -8,11 +8,12 @@
 @import "partials/contactStyles";
 
 // ** HOME **
+
 .home p {
   padding-bottom: 2rem;
 }
 
-// HEADER
+// Header
 .home header {
   background: $pine;
 }
@@ -28,8 +29,7 @@
   .titleContainer::before {
     content: "";
     display: inline-block;
-    background-image: url("../assets/circle-text.png");
-    background-repeat: no-repeat;
+    background: no-repeat url("../assets/circle-text.png");
     width: 180px;
     height: 180px;
     position: absolute;
@@ -48,7 +48,7 @@
   }
 }
 
-// WHO'S WILLOW?
+// Who's Willow
 .whosWillow {
   background: $whiteShade;
   text-align: center;
@@ -58,7 +58,7 @@
   }
 }
 
-// FAVOURITE THINGS, BUCKET LIST (.aboutMore)
+// Favourite Things, Bucket List (.aboutMore)
 .favouriteThings,
 .bucketList {
   @include flexBox(center, center);
@@ -111,7 +111,7 @@
   }
 }
 
-// WILLOW'S JOURNEY
+// Willow's Journey
 .willowsJourney {
   background: $whiteShade;
   padding: 8rem 0;
@@ -135,12 +135,12 @@
   top: 0.4rem;
 }
 
-// LANDSCAPE IMAGE
+// Landscape image
 .landscapeImage .wrapper {
   max-width: 100%;
 }
 
-// GALLERY
+// Gallery
 .gallery .wrapper {
   @include flexBox(space-between, center);
   padding: 10rem 0;
@@ -150,7 +150,7 @@
   margin: 0 3rem;
 }
 
-// FOOTER
+// Footer
 .home footer {
   background: $whiteShade;
   .wrapper {
@@ -180,7 +180,7 @@ footer section {
 
 // ******************************
 
-// MEDIA QUERIES
+// Media Queries
 @media (max-width: 1280px) {
   .hero h1 {
     font-size: 12.5rem;
@@ -190,9 +190,6 @@ footer section {
   }
   .hero .imageContainer {
     flex-basis: 30%;
-  }
-  .asideContainer .recentPosts li::before {
-    padding: 0.5rem;
   }
 }
 
@@ -223,47 +220,6 @@ footer section {
   }
   .willowsJourney {
     padding-top: 5rem;
-  }
-  .blog main .wrapper {
-    flex-direction: column;
-  }
-  .asideContainer {
-    width: 100%;
-    padding: 5rem 0;
-    .aboutWillow {
-      @include flexBox(center, center, column);
-      text-align: center;
-      .textContainer {
-        width: 70%;
-      }
-    }
-    .recentPosts {
-      align-items: center;
-    }
-  }
-  .articleContainer {
-    padding: 0 0 5rem 0;
-    h2 {
-      text-align: center;
-    }
-  }
-  .contact main .wrapper {
-    flex-direction: column;
-  }
-  address {
-    @include flexBox(center, center, column);
-    width: 100%;
-    margin-top: 5rem;
-    text-align: center;
-    .social {
-      margin-left: 0;
-      a {
-        margin: 0 1rem;
-      }
-    }
-  }
-  .contact form {
-    margin: 5rem 0;
   }
 }
 
@@ -364,11 +320,6 @@ footer section {
     width: 80%;
     top: 3.2rem;
   }
-  .blog header h1,
-  .contact header h1 {
-    width: 80%;
-    top: 23.2rem;
-  }
 }
 
 @media (max-width: 560px) {
@@ -378,16 +329,6 @@ footer section {
   .hero .titleContainer::before {
     left: -3.5rem;
     background-size: 8.5rem;
-  }
-  form input[type="text"],
-  form input[type="email"] {
-    width: 100%;
-  }
-  form input[type="email"] {
-    margin-top: 2rem;
-  }
-  .asideContainer .aboutWillow .textContainer {
-    width: 100%;
   }
 }
 
@@ -406,27 +347,5 @@ footer section {
   }
   .hero .imageContainer {
     top: 2.5rem;
-  }
-  .contact header h1,
-  .blog header h1 {
-    font-size: 6rem;
-    top: 27.5rem;
-  }
-  article h2 {
-    font-size: 3.2rem;
-    font-size: 2.4rem;
-  }
-  .asideContainer aside,
-  .asideContainer article,
-  .articleContainer aside,
-  .articleContainer article {
-    padding: 2.5rem;
-  }
-  .comment .imageContainer {
-    min-width: 25%;
-    padding-right: 2rem;
-  }
-  footer .copyright {
-    font-size: 1.8rem;
   }
 }
