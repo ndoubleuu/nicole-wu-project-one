@@ -1,1 +1,1 @@
-# nicole-wu-project-one
+# nicoleWuProjectOne
