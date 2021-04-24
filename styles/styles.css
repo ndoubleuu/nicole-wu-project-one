@@ -351,24 +351,22 @@ ul li {
   border-bottom: 0.2rem solid #e4a436;
 }
 
-input[type="checkbox"] {
+.hamburger {
   position: absolute;
-  opacity: 0;
-}
-
-input[type="checkbox"]:checked + .dropdown {
-  top: 0;
-}
-
-label[for="toggle"] {
-  position: absolute;
+  font-size: 5rem;
   right: 1rem;
   padding: 3rem;
+  color: #fff;
   visibility: hidden;
 }
 
-label[for="toggle"]:hover {
+.hamburger:hover {
   cursor: pointer;
+}
+
+.showMenu {
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
 }
 
 .button,
@@ -408,7 +406,7 @@ input[type="submit"]:focus {
 }
 
 @media (max-width: 780px) {
-  label[for="toggle"] {
+  .hamburger {
     visibility: visible;
     z-index: 20;
   }
@@ -422,7 +420,9 @@ input[type="submit"]:focus {
     background: #1f1f1ffd;
     position: absolute;
     right: 0;
-    top: -77rem;
+    top: 0;
+    -webkit-transform: translateY(-77rem);
+            transform: translateY(-77rem);
     z-index: 10;
   }
   .menu .dropdown .willowName {

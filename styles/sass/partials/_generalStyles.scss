@@ -41,24 +41,21 @@ ul {
   }
 }
 
-input[type="checkbox"] {
+.hamburger {
   position: absolute;
-  opacity: 0;
-}
-
-input[type="checkbox"]:checked + .dropdown {
-  top: 0;
-}
-
-label[for="toggle"] {
-  position: absolute;
+  font-size: 5rem;
   right: 1rem;
   padding: 3rem;
+  color: #fff;
   visibility: hidden;
 }
 
-label[for="toggle"]:hover {
+.hamburger:hover {
   cursor: pointer;
+}
+
+.showMenu {
+  transform: translateY(0) !important;
 }
 
 .button,
@@ -95,7 +92,7 @@ input[type="submit"] {
 
 //Media Queries
 @media (max-width: 780px) {
-  label[for="toggle"] {
+  .hamburger {
     visibility: visible;
     z-index: 20;
   }
@@ -106,7 +103,8 @@ input[type="submit"] {
     background: #1f1f1ffd;
     position: absolute;
     right: 0;
-    top: -77rem;
+    top: 0;
+    transform: translateY(-77rem);
     z-index: 10;
     .willowName {
       display: none;
