@@ -689,7 +689,7 @@ address {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
   padding: 5rem 3rem;
-  margin: 10rem 3rem 0 0;
+  margin: 10rem 3rem 10rem 0;
 }
 
 address .contactEmail {
@@ -704,6 +704,12 @@ address p {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
   margin: 10rem 0;
+}
+
+.thankYou {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 25rem !important;
 }
 
 .social {
@@ -757,7 +763,10 @@ address p {
     margin: 0 1rem;
   }
   .contact form {
-    margin: 5rem 0;
+    margin: -3rem 0 8rem 0;
+  }
+  .thankYou {
+    margin-top: 0 !important;
   }
 }
 

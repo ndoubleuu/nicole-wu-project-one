@@ -19,7 +19,7 @@ address {
   height: 100%;
   flex-basis: 35%;
   padding: 5rem 3rem;
-  margin: 10rem 3rem 0 0;
+  margin: 10rem 3rem 10rem 0;
   .contactEmail {
     padding: 2rem 0;
   }
@@ -30,6 +30,12 @@ address {
 .contact form {
   flex-basis: 80%;
   margin: 10rem 0;
+}
+
+.thankYou {
+  font-family: $mainFont;
+  text-align: center;
+  margin-top: 25rem !important;
 }
 
 .social {
@@ -65,6 +71,9 @@ address {
     }
   }
   .contact form {
-    margin: 5rem 0;
+    margin: -3rem 0 8rem 0;
+  }
+  .thankYou {
+    margin-top: 0 !important;
   }
 }
