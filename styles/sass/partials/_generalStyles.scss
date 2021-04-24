@@ -48,10 +48,11 @@ ul {
   padding: 3rem;
   color: #fff;
   visibility: hidden;
-}
-
-.hamburger:hover {
-  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    cursor: pointer;
+    color: $accent;
+  }
 }
 
 .showMenu {

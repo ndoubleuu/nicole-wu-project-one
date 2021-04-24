@@ -358,10 +358,13 @@ ul li {
   padding: 3rem;
   color: #fff;
   visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .hamburger:hover {
   cursor: pointer;
+  color: #e4a436;
 }
 
 .showMenu {
