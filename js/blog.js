@@ -1,14 +1,57 @@
 // Blog page form
 
-// When form is submitted, comment should be displayed at the end of the comments section
+// When form is submitted, comment should be displayed at the end of the comments section:
 
-// Place Blog form into variable
+// Place Blog form and inputs into variables
 const blogForm = document.querySelector('.blog form');
-console.log(blogForm);
+const commentInput = document.querySelector('.blog textarea');
+const nameInput = document.querySelector('.blog #name');
+
+// Store the div that will hold the new comment(s) in a variable
+const newCommentArea = document.querySelector('.newCommentArea');
+
+//Store current date in a variable, change date to a string
+const d = new Date();
+const today = d.toDateString();
 
 // Add event listener to submit button
 blogForm.addEventListener('submit', function(event) {
     // Prevent page from refreshing
     event.preventDefault();
 
+    //create new article to hold comment each time form is submitted
+    const newComment = document.createElement('article');
+
+    //Place input values into variables to be used in conditional statement
+    const userComment = commentInput.value;
+    const userName = nameInput.value;
+
+    //If userComment (textarea) is empty, alert the user
+    if (userComment === "") {
+        alert(`Don't forget to add a comment!`);
+        //If userName (input #name) is empty, alert the user 
+    } else if (userName === "") {
+        alert(`Don't forget to include your name!`);
+    // If name and comment are included in the form:
+    } else {
+        // Add following HTML into newly created article element (newComment)
+        newComment.innerHTML = `
+        <div class="imageContainer">
+            <img src="https://placebear.com/89/89" alt="User profile picture">
+        </div>
+        <div class="textContainer">
+            <h3>${today} by ${userName}</h3>
+            <p>${userComment}</p>
+        </div>
+        `;
+        // Append newComment (new article element) to newCommentArea (div) so that new comments appear on the page
+        newCommentArea.appendChild(newComment);
+
+        // Add class of "comment" to newComment to ensure consist styling for all comments
+        newComment.classList.add('comment');
+        
+        // Clear form after comment has been submitted
+        commentInput.value = "";
+        nameInput.value = "";
+    }
 })

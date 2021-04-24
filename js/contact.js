@@ -1,9 +1,10 @@
 // Contact page form
 
-// When the form is submitted, replace the form with a message saying "Thank you for your message! We will get back to you shortly."
+// When the form is submitted, replace the form with a message saying "Thank you for your message! We will get back to you shortly.":
 
 //Place Contact form into a variable
 const contactForm = document.querySelector('.contact form');
+//Place contact inputs into variables
 const contactMessage = document.querySelector('.contact textarea');
 const contactName = document.querySelector('.contact input[type="text"]');
 const contactEmail = document.querySelector('.contact input[type="email"]');
@@ -13,13 +14,13 @@ contactForm.addEventListener('submit', function (event) {
     // Prevent page from refreshing
     event.preventDefault();
 
-    //If textarea does not contain a message, alert:
+    //If textarea does not contain a message, alert the user
     if (contactMessage.value === "") {
         alert(`Don't forget to enter a message for us before submitting!`);
-    //If user has not entered their name into input (type text), alert:
+    //If user has not entered their name into input (type text), alert the user
     } else if (contactName.value === "") {
         alert(`Don't forget to enter your name!`);
-    //If user has not entered their email into input (type email), alert:
+    //If user has not entered their email into input (type email), alert the user
     } else if (contactEmail.value === "") {
         alert(`Don't forget to enter your e-mail address!`);
     } else {

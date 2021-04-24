@@ -570,7 +570,7 @@ input[type="submit"]:focus {
   margin: 0;
 }
 
-.comment2 {
+article.comment:last-child {
   border-bottom: 0.5rem solid #709b6b;
 }
 
