@@ -14,15 +14,15 @@ contactForm.addEventListener('submit', function (event) {
     // Prevent page from refreshing
     event.preventDefault();
 
-    //If textarea does not contain a message, alert the user
+    //If textarea does not contain a message, add red border
     if (contactMessage.value === "") {
-        alert(`Don't forget to enter a message for us before submitting!`);
-    //If user has not entered their name into input (type text), alert the user
+        contactMessage.style.border = "3px solid red";
+    //If user has not entered their name into input (type text), add red border
     } else if (contactName.value === "") {
-        alert(`Don't forget to enter your name!`);
-    //If user has not entered their email into input (type email), alert the user
+        contactName.style.border = "3px solid red";
+    //If user has not entered their email into input (type email), add red border
     } else if (contactEmail.value === "") {
-        alert(`Don't forget to enter your e-mail address!`);
+        contactEmail.style.border = "3px solid red";
     } else {
         // Form should disappear and message should appear
         contactForm.textContent = `Thank you for your message! We will get back to you shortly.`;

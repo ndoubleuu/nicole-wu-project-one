@@ -26,12 +26,12 @@ blogForm.addEventListener('submit', function(event) {
     const userComment = commentInput.value;
     const userName = nameInput.value;
 
-    //If userComment (textarea) is empty, alert the user
+    //If userComment (textarea) is empty, add red border
     if (userComment === "") {
-        alert(`Don't forget to add a comment!`);
-        //If userName (input #name) is empty, alert the user 
+        commentInput.style.border = "3px solid red";
+        //If userName (input #name) is empty, add red border
     } else if (userName === "") {
-        alert(`Don't forget to include your name!`);
+        nameInput.style.border = "3px solid red";
     // If name and comment are included in the form:
     } else {
         // Add following HTML into newly created article element (newComment)
@@ -53,5 +53,9 @@ blogForm.addEventListener('submit', function(event) {
         // Clear form after comment has been submitted
         commentInput.value = "";
         nameInput.value = "";
+
+        // Remove red borders
+        commentInput.style.border = "none";
+        nameInput.style.border = "none";
     }
 })
