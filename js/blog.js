@@ -6,6 +6,7 @@
 const blogForm = document.querySelector('.blog form');
 const commentInput = document.querySelector('.blog textarea');
 const nameInput = document.querySelector('.blog #name');
+const emailInput = document.querySelector('.blog #email');
 
 // Store the div that will hold the new comment(s) in a variable
 const newCommentArea = document.querySelector('.newCommentArea');
@@ -37,7 +38,7 @@ blogForm.addEventListener('submit', function(event) {
         // Add following HTML into newly created article element (newComment)
         newComment.innerHTML = `
         <div class="imageContainer">
-            <img src="https://placebear.com/89/89" alt="User profile picture">
+            <img src="https://placekeanu.com/89/89/g" alt="User profile picture">
         </div>
         <div class="textContainer">
             <h3>${today} by ${userName}</h3>
@@ -53,6 +54,7 @@ blogForm.addEventListener('submit', function(event) {
         // Clear form after comment has been submitted
         commentInput.value = "";
         nameInput.value = "";
+        emailInput.value = "";
 
         // Remove red borders
         commentInput.style.border = "none";
