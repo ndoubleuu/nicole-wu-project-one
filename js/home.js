@@ -6,8 +6,8 @@ const galleryImageTwo = document.querySelector('#imageTwo');
 const galleryImageThree = document.querySelector('#imageThree');
 
 window.addEventListener('scroll', function() {
+    //Store scroll "distance" in a variable to be used in conditional statements
     let scrolling = window.scrollY;
-    console.log(scrolling);
     //From 2000 scroll onward, show landscape image
     if (scrolling >= 2000) {
         landscapeImage.classList.add('showElement');
