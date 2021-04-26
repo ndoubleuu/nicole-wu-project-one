@@ -150,6 +150,19 @@
   margin: 0 3rem;
 }
 
+// Landscape and gallery images opacity and transition for scroll+appear effect
+.landscapeImage .wrapper,
+#imageOne,
+#imageTwo,
+#imageThree {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.showElement {
+  opacity: 1 !important;
+}
+
 // Footer
 .home footer {
   background: $whiteShade;

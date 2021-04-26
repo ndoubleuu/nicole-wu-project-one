@@ -1,5 +1,9 @@
 //General styles for all pages
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }

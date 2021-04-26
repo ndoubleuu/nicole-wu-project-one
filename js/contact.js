@@ -15,17 +15,17 @@ contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
     //If textarea does not contain a message, add red border
-    if (contactMessage.value === "") {
-        contactMessage.style.border = "3px solid red";
+    if (contactMessage.value === '') {
+        contactMessage.style.border = '3px solid red';
     //If user has not entered their name into input (type text), add red border
-    } else if (contactName.value === "") {
-        contactName.style.border = "3px solid red";
+    } else if (contactName.value === '') {
+        contactName.style.border = '3px solid red';
     //If user has not entered their email into input (type email), add red border
-    } else if (contactEmail.value === "") {
-        contactEmail.style.border = "3px solid red";
+    } else if (contactEmail.value === '') {
+        contactEmail.style.border = '3px solid red';
     } else {
         // Form should disappear and message should appear
-        contactForm.textContent = `Thank you for your message! We will get back to you shortly.`;
+        contactForm.textContent = 'Thank you for your message! We will get back to you shortly.';
         // Style the message
         contactForm.classList.add('thankYou');
     }
