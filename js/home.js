@@ -1,4 +1,4 @@
-// Images in landscapeImage section and gallerySection should appear when scrolled to a certain point
+// Images in landscapeImage section and gallerySection on Home page should appear when scrolled to a certain point
 
 const landscapeImage = document.querySelector('.landscapeImage .wrapper');
 const galleryImageOne = document.querySelector('#imageOne');
